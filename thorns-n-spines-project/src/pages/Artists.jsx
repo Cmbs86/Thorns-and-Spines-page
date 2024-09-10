@@ -5,7 +5,7 @@ const Artists = () => {
   return (
     <>
     <Header/>
-    <div>Artists</div>
+    <div>Resident artists</div>
     
     </>
   )

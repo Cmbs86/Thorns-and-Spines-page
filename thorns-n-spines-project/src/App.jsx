@@ -21,12 +21,6 @@ function App() {
     </>
   );
 }
-{
-  /* <Home />
-<Artists />
-<Contact />
-<Studio />
-<UpcomingGuests /> */
-}
+
 
 export default App;
