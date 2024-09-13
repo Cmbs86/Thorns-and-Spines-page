@@ -6,7 +6,7 @@ const Header = () => {
 
     <>
     <HamburgerMenu /> 
-    <h1>Welcome to Thorns and Spines</h1>
+    <h1 className="text-3xl font-bold underline">Welcome to Thorns and Spines</h1>
     </>
   )
 }
