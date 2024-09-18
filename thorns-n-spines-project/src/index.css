@@ -84,5 +84,5 @@ code {
 
 /* change later to thorns and spines default */
 body {
-  @apply bg-neutral-950 text-neutral-300;
+  @apply bg-tns-ebony-dark text-neutral-300;
 }
