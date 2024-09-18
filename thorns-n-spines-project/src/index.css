@@ -81,3 +81,8 @@ code {
       height: 10px;
   }
 }
+
+/* change later to thorns and spines default */
+body {
+  @apply bg-neutral-950 text-neutral-300;
+}
