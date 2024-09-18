@@ -1,8 +1,8 @@
 import React from 'react'
-
+import Header from "../components/Header.jsx"
 const UpcomingGuests = () => {
   return (
-    <div>UpcomingGuests</div>
+    <Header />
   )
 }
 

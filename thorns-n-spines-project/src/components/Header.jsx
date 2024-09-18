@@ -1,13 +1,17 @@
-import React from 'react'
 
+import NavDesktop from "./NavDesktop";
+import NavMobile from "./NavMobile";
 
 const Header = () => {
   return (
+    <div className="fixed top-0 left-0 right-0 bg-neutral-950 border-b border-neutral-700">
+      <nav className="container flex items-center justify-between py-1 lg:py-5">
+        <span className="text-lg">⚡️</span>
+        <NavMobile />
+        <NavDesktop />
+      </nav>
+    </div>
+  );
+};
 
-    <>
-    <h1 className="text-3xl font-bold underline">Header</h1>
-    </>
-  )
-}
-
-export default Header
+export default Header;
