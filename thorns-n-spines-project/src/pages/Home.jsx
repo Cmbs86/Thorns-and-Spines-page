@@ -7,7 +7,7 @@ const Home = () => {
       <Header />
       <div className="space-y-5 text-center gap-5">
         <h1 className="lg:text-4xl text-2xl  font-bold">
-          Animated Hamburger Menu
+         Welcome to Thorns and Spines
         </h1>
         <p className="max-w-lg text-sm leading-6">
           This is a simple example of how to build an animate a hamburger menu

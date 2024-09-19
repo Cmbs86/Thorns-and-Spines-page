@@ -13,7 +13,7 @@ const NavMobile = () => {
 
   return (
     <div ref={ref} className="lg:hidden ">
-      <Hamburger toggled={isOpen} size={20} toggle={setOpen} />
+      <Hamburger toggled={isOpen} size={35} toggle={setOpen} />
       <AnimatePresence>
         {isOpen && (
           <motion.div
