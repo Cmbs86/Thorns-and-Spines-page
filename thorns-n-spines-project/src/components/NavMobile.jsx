@@ -12,8 +12,8 @@ const NavMobile = () => {
   useClickAway(ref, () => setOpen(false));
 
   return (
-    <div ref={ref} className="lg:hidden ">
-      <Hamburger toggled={isOpen} size={35} toggle={setOpen} />
+    <div ref={ref} className="lg:hidden w-full ml-5 mt-5 flex justify-start">
+      <Hamburger toggled={isOpen} size={40} toggle={setOpen} />
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -21,7 +21,7 @@ const NavMobile = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 bg-neutral-950 border-b border-b-white/20"
+            className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 border-b border-b-white/20"
           >
             <ul className="grid gap-2">
               {routes.map((route, idx) => {
@@ -38,17 +38,17 @@ const NavMobile = () => {
                       delay: 0.1 + idx / 10,
                     }}
                     key={route.title}
-                    className="w-full p-[0.08rem] rounded-xl bg-gradient-to-tr from-neutral-800 via-neutral-950 to-neutral-700"
+                    className="w-full p-[0.08rem] py-5 rounded-xl "
                   >
                     <a
                       onClick={() => setOpen((prev) => !prev)}
                       className={
-                        "flex items-center justify-between w-full p-5 rounded-xl bg-neutral-950"
+                        "flex items-center justify-center w-full rounded-xl"
                       }
                       href={route.href}
                     >
-                      <span className="flex gap-1 text-lg">{route.title}</span>
-                      <Icon className="text-xl" />
+                      <span className="flex gap-1 text-3xl font-bold">{route.title}</span>
+                      {/* <Icon className="text-xl" /> */}
                     </a>
                   </motion.li>
                 );
