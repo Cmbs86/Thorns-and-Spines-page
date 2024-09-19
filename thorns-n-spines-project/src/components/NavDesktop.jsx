@@ -9,9 +9,9 @@ const NavDesktop = () => {
           <li>
             <a
               href={href}
-              className="flex items-center gap-1 hover:text-neutral-400 transition-all"
+              className="flex items-center gap-1 text-tns-mint-cream hover:text-neutral-300  transition-all text-3xl font-bold"
             >
-              <Icon />
+              {/* <Icon /> */}
               {title}
             </a>
           </li>
