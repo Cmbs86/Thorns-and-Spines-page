@@ -1,3 +1,4 @@
+import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 
@@ -9,6 +10,8 @@ const Layout = ({ children }) => {
       <main className=" flex-1 flex-grow w-full max-w-full">
         {children}
       </main>
+
+      <Footer/>
     </div>
   );
 };

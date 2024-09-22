@@ -1,15 +1,42 @@
+import ThornsHero from "../assets/images/hero.webp";
 
-import ThornsHero from "../assets/images/hero.webp"
 const Hero = () => {
   return (
-    <div className='hidden lg:block relative w-full h-[76vh] z-10 group'>
-        <div className='absolute w-full h-full ' style={{backgroundImage: `url(${ThornsHero})`, 
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "fixed" }}></div>
-    </div>
-  )
-}
+    <div className="hidden lg:block fixed w-full h-[80vh] z-10">
+      {/* Background image container */}
+      <div
+        className="absolute w-full h-full bg-cover bg-center bg-no-repeat bg-fixed"
+        style={{ backgroundImage: `url(${ThornsHero})` }}
+      >
+        {/* Container for the hero content */}
+        <div className="relative w-full h-full flex flex-col justify-between">
+          
+          {/* Top animated heading */}
+          <div className="absolute top-24 w-full">
+            <h1 className="lg:text-8xl text-3xl font-bold animate-marquee w-full text-center">
+              Welcome to Thorns and Spines
+            </h1>
+          </div>
 
-export default Hero
+          {/* Centered links/text */}
+          <div className="flex h-full items-center justify-center">
+            <div className="text-center space-y-3">
+              <a href="/upcoming-guests" className="block lg:text-3xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
+                Upcoming Guests
+              </a>
+              <a href="/artists" className="block lg:text-3xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
+                Meet Our Artists
+              </a>
+              <a href="/studio" className="block lg:text-3xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
+                Tour the Studio
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Hero;
