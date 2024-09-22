@@ -6,10 +6,12 @@ import Contact from "./pages/Contact.jsx";
 import Studio from "./pages/Studio.jsx";
 import UpcomingGuests from "./pages/UpcomingGuests.jsx";
 import NotFound from "./pages/NotFound.jsx";
+import Layout from "./layouts/Layout.jsx";
 
 function App() {
   return (
     <>
+    <Layout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/studio" element={<Studio />} />
@@ -18,6 +20,7 @@ function App() {
         <Route path="/upcoming-guests" element={<UpcomingGuests />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
+      </Layout>
     </>
   );
 }
