@@ -25,7 +25,7 @@ export const routes = [
     Icon: PiChatCircleBold,
   },
   {
-    title: "Upcoming Guests",
+    title: "Guest Artists",
     href: "/upcoming-guests",
     Icon: PiChatCircleBold,
   },

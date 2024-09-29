@@ -13,3 +13,34 @@ Currently, two official plugins are available:
 - color palette
 - get fonts and assets
 - start the HTML and CSS
+
+
+** Main Page**
+- Change fonts
+- navbar a bit up - desktop keep the same
+- navbar mobile with background pic
+
+** Artists page **
+
+- Circled pictures of artists - Card - simple info with instagram anchor tag.
+
+
+** Footer **
+
+- Simple with Location and Contact
+- 
+
+
+** Studio Page:
+
+- Just a grid with pictures.
+
+** Contact us Page**
+
+- Contact us form that redirects to the shop email.
+- " for appointments direct with the artist or via email to the shop".
+
+
+**Guest Pages **
+
+- The same as Artist page but with date, Instagram, Booking direct with the artists.
