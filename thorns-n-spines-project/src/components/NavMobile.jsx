@@ -23,7 +23,7 @@ const NavMobile = () => {
             transition={{ duration: 0.2 }}
             className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 border-b border-b-white/20"
           >
-            <ul className="grid gap-2">
+            <ul className="grid gap-2 mb-32 mt-48">
               {routes.map((route, idx) => {
                 const { Icon } = route;
 
@@ -38,7 +38,7 @@ const NavMobile = () => {
                       delay: 0.1 + idx / 10,
                     }}
                     key={route.title}
-                    className="w-full p-[0.08rem] py-5 rounded-xl "
+                    className="w-full p-[0.08rem] py-2 rounded-xl "
                   >
                     <a
                       onClick={() => setOpen((prev) => !prev)}
@@ -47,7 +47,7 @@ const NavMobile = () => {
                       }
                       href={route.href}
                     >
-                      <span className="flex gap-1 text-3xl font-bold">{route.title}</span>
+                      <span className="flex gap-1 text-4xl mb-20 font-bold">{route.title}</span>
                       {/* <Icon className="text-xl" /> */}
                     </a>
                   </motion.li>
