@@ -13,15 +13,15 @@ const Hero = () => {
           
           {/* Top animated heading */}
           <div className="absolute top-24 w-full">
-            <h1 className="lg:text-8xl text-3xl font-bold animate-marquee w-full text-center">
+            <h1 className="lg:text-8xl text-3xl font-bold animate-marquee w-full text-center text-tns-ash-gray-light font-sans">
               Welcome to Thorns and Spines
             </h1>
           </div>
 
           {/* Centered links/text */}
-          <div className="flex h-full items-center justify-center">
+          {/* <div className="flex h-full items-center justify-center">
             <div className="text-center space-y-3">
-              <a href="/upcoming-guests" className="block lg:text-3xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
+              <a href="/upcoming-guests" className="block lg:text-4xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
                 Upcoming Guests
               </a>
               <a href="/artists" className="block lg:text-3xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
@@ -31,7 +31,7 @@ const Hero = () => {
                 Tour the Studio
               </a>
             </div>
-          </div>
+          </div> */}
           
         </div>
       </div>

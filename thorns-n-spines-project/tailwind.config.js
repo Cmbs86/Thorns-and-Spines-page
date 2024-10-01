@@ -19,6 +19,11 @@ export default {
       animation: {
         marquee: "marquee 20s linear infinite",
       },
+
+      fontFamily: {
+        sans: ['Quicksand', 'sans-serif'], 
+      },
+
     },
   },
   plugins: [],

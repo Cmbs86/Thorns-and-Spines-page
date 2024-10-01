@@ -7,7 +7,7 @@ const UpcomingGuests = () => {
       <Header />
       <div className="space-y-5 text-center gap-5">
         <h1 className="lg:text-6xl text-3xl  font-bold">
-        Upcoming Guests
+        Guest Artists
         </h1>
         {/* <p className="max-w-lg text-sm leading-6">
           This is a simple example of how to build an animate a hamburger menu
