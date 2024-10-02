@@ -4,6 +4,7 @@ import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
 import { routes } from "../routes";
+import Hero from "../components/Hero.jsx";
 
 
 const NavMobile = () => {
@@ -41,6 +42,7 @@ const NavMobile = () => {
                   key={route.title}
                   className="w-full p-[0.08rem] py-2 rounded-xl "
                   >
+                
                     <a
                       onClick={() => setOpen((prev) => !prev)}
                       className={
