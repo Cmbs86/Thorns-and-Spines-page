@@ -1,13 +1,13 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
-import Hero from "../components/Hero";
+
 
 const Layout = ({ children }) => {
   return (
-    <div className="flex flex-col min-h-screen justify-center items-center">
+    <div className="flex flex-col min-h-screen">
       <Header />
   
-      <main className=" flex-1 flex-grow w-full max-w-full">
+      <main className="flex-1 w-full">
         {children}
       </main>
 
