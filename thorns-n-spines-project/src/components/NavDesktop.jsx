@@ -2,7 +2,7 @@ import { routes } from "../routes";
 
 const NavDesktop = () => {
   return (
-    <ul className="hidden lg:flex lg:items-center gap-5 text-sm">
+    <ul className="hidden md:flex md:items-center gap-5 text-sm">
       {routes.map((route) => {
         const { Icon, href, title } = route;
         return (
