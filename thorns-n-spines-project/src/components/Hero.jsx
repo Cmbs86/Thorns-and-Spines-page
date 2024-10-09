@@ -2,10 +2,10 @@ import ThornsHero from "../assets/images/hero.webp";
 
 const Hero = () => {
   return (
-    <div className=" fixed w-full h-[87vh] z-0 ">
+    <div className="fixed w-full h-[87vh] ">
       {/* Background image container */}
       <div
-        className="absolute w-full h-full bg-cover bg-center bg-no-repeat bg-fixed z-0"
+        className="absolute w-full h-full bg-cover bg-center bg-no-repeat bg-fixed"
         style={{ backgroundImage: `url(${ThornsHero})` }}
       >
         {/* Container for the hero content */}
