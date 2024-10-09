@@ -1,18 +1,16 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-
 const Layout = ({ children }) => {
-  return (
-    <div className="flex w-full flex-col min-h-screen">
+  return (<>
+    <div className="min-h-screen">
       <Header />
-  
-      <main className="flex-1 w-full">
-        {children}
-      </main>
 
-      <Footer/>
+      <main>{children}</main>
+
+      <Footer />
     </div>
+      </>
   );
 };
 
