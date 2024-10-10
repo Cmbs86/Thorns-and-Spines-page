@@ -1,5 +1,5 @@
 import { useClickAway } from "react-use";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
@@ -8,6 +8,18 @@ import { routes } from "../routes";
 const NavMobile = () => {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
+
+  useEffect(() => {
+    if(isOpen){
+      document.body.style.overflow= "hidden";
+    } else{
+      document.body.style.overflow= "auto"
+    }
+
+    return () => {
+      document.body.style.overflow = "auto"
+    }
+  }, [isOpen])
 
   useClickAway(ref, () => setOpen(false));
 
@@ -22,7 +34,7 @@ const NavMobile = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="flex w-full pb-96 "
+            className="flex w-full pb-[80vh]  "
           >
             <ul className="w-[91%] flex flex-col m-0 p-0 mt-20  ">
               {routes.map((route, idx) => {
