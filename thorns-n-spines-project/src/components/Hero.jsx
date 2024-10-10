@@ -2,7 +2,7 @@ import ThornsHero from "../assets/images/hero.webp";
 
 const Hero = () => {
   return (
-    <div className="relative w-full h-[80vh] z-10">
+    <div className="relative w-full h-[80vh] z-0 ">
       {/* Background image container */}
       <div
         className="absolute w-full h-full"

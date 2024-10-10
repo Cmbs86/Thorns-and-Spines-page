@@ -23,8 +23,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex pt-3 pr-2 text-center text-tns-ebony font-sans border-t border-tns-ebony ">
-        <p className="flex w-full justify-end ">
+      <div className="flex text-center text-tns-ebony font-sans border-t border-tns-ebony ">
+        <p className="flex md:pr-3 py-2 md:py-4 w-full justify-center md:justify-end  ">
           &copy; {new Date().getFullYear()} Thorns and Spines. All Rights
           Reserved.
         </p>

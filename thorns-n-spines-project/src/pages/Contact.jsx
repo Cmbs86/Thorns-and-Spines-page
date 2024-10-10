@@ -5,7 +5,6 @@ const Contact = () => {
   return (
     <>
    <div className="min-h-screen flex justify-center p-5 items-center">
-      <Header />
       <div className="space-y-5 text-center gap-5">
         <h1 className="lg:text-6xl text-3xl  font-bold">
        Contact us
