@@ -2,40 +2,29 @@ import ThornsHero from "../assets/images/hero.webp";
 
 const Hero = () => {
   return (
-    <div className="hidden lg:block fixed w-full h-[80vh] z-10">
+    <div className="relative w-full h-[80vh] z-0 ">
       {/* Background image container */}
       <div
-        className="absolute w-full h-full bg-cover bg-center bg-no-repeat bg-fixed"
-        style={{ backgroundImage: `url(${ThornsHero})` }}
+        className="absolute w-full h-full"
+        style={{ backgroundImage: `url(${ThornsHero})`,  backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "fixed", }}
       >
         {/* Container for the hero content */}
-        <div className="relative w-full h-full flex flex-col justify-between">
-          
+        {/* <div className=" w-full h-full flex flex-col justify-between  ">
+           */}
           {/* Top animated heading */}
-          <div className="absolute top-24 w-full">
-            <h1 className="lg:text-8xl text-3xl font-bold animate-marquee w-full text-center text-tns-ash-gray-light font-sans">
+          {/* <div className="absolute bottom-10 w-full">
+            <h1 className="text-5xl md:text-6xl font-bold animate-marquee w-full text-center text-tns-ash-gray-light font-sans">
               Welcome to Thorns and Spines
             </h1>
-          </div>
-
-          {/* Centered links/text */}
-          {/* <div className="flex h-full items-center justify-center">
-            <div className="text-center space-y-3">
-              <a href="/upcoming-guests" className="block lg:text-4xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
-                Upcoming Guests
-              </a>
-              <a href="/artists" className="block lg:text-3xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
-                Meet Our Artists
-              </a>
-              <a href="/studio" className="block lg:text-3xl text-xl font-semibold text-white hover:text-neutral-300 transition-all">
-                Tour the Studio
-              </a>
-            </div>
           </div> */}
           
-        </div>
+        {/* </div> */}
       </div>
     </div>
+    /* Work on the positioning here: Change absolute, fixed and relative. This might fix the problem with the footer, and the "hidden" on media queries. */
   );
 };
 

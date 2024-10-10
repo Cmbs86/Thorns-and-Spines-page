@@ -12,8 +12,9 @@ const NavMobile = () => {
   useClickAway(ref, () => setOpen(false));
 
   return (
-    <div ref={ref} className="lg:hidden w-full ml-5 mt-5 flex justify-start">
-      <Hamburger toggled={isOpen} size={40} toggle={setOpen} />
+    <div ref={ref} className="md:hidden w-full mt-5 flex ">
+      <Hamburger toggled={isOpen} size={30} toggle={setOpen} />
+
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -21,9 +22,9 @@ const NavMobile = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed left-0 shadow-4xl right-0 top-[3.5rem] p-5 pt-0 border-b border-b-white/20"
+            className="flex w-full pb-96 "
           >
-            <ul className="grid gap-2 mb-32 mt-48">
+            <ul className="w-[91%] flex flex-col m-0 p-0 mt-20  ">
               {routes.map((route, idx) => {
                 const { Icon } = route;
 
@@ -38,16 +39,17 @@ const NavMobile = () => {
                       delay: 0.1 + idx / 10,
                     }}
                     key={route.title}
-                    className="w-full p-[0.08rem] py-2 rounded-xl "
+                    className="flex py-2  "
                   >
                     <a
                       onClick={() => setOpen((prev) => !prev)}
-                      className={
-                        "flex items-center justify-center w-full rounded-xl"
-                      }
+                      className="flex items-center justify-center w-full "
                       href={route.href}
                     >
-                      <span className="flex gap-1 text-4xl mb-20 font-bold">{route.title}</span>
+                      {/* fix media queries of the link/routes */}
+                      <span className="flex text-2xl md:text-4xl mb-12 font-bold text-tns-ebony">
+                        {route.title}
+                      </span>
                       {/* <Icon className="text-xl" /> */}
                     </a>
                   </motion.li>
