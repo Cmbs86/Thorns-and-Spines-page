@@ -36,7 +36,7 @@ const NavMobile = () => {
             transition={{ duration: 0.2 }}
             className="flex w-full pb-[80vh]  "
           >
-            <ul className="w-[91%] flex flex-col m-0 p-0 mt-20  ">
+            <ul className="w-[91%] flex flex-col m-0 p-0 mt-40  ">
               {routes.map((route, idx) => {
                 const { Icon } = route;
 
