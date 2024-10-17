@@ -1,27 +1,64 @@
-import React from 'react'
-import Header from '../components/Header'
+import React from "react";
+import SeppTattoo from "../assets/images/sepp.webp";
+import gabitattoo from "../assets/images/gabi.webp";
+import maikontattoo from "../assets/images/maikon.webp";
+import mariatattoo from "../assets/images/maria.webp";
+import ArtistCard from "../components/ArtistCard.jsx";
 
 const Artists = () => {
   return (
     <>
-   <div className="min-h-screen flex justify-center p-5 items-center">
-   
-      <div className="space-y-5 text-center gap-5">
-        <h1 className="lg:text-6xl text-3xl  font-bold">
-      Resident Artists
-        </h1>
-        {/* <p className="max-w-lg text-sm leading-6">
-          This is a simple example of how to build an animate a hamburger menu
-          with React and Framer Motion. I hope you like it!
-        </p> */}
-        {/* <button className="px-5 py-3 bg-neutral-300 rounded-md text-sm text-stone-800">
-          Get Started
-        </button> */}
-      </div>
-    </div>
-    
-    </>
-  )
-}
+      <div className=" min-h-screen fle flex-col items-center justify-center">
+        {/* Text section */}
+        <div className="text-center my-8">
+          <h1 className="text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
+            Resident Artists
+          </h1>
+        </div>
 
-export default Artists
+        {/* Wrapper for cards */}
+        <div className="max-w-[1600px] w-full mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+
+     
+
+          <ArtistCard
+            img={SeppTattoo}
+            name={"Sep"}
+            socialMedia={"@sep"}
+            booking={"link here"}
+          />
+
+          <ArtistCard
+            img={gabitattoo}
+            name={"Gabi"}
+            socialMedia={"@gabi"}
+            booking={"Link here"}
+          />
+          <ArtistCard
+            img={maikontattoo}
+            name={"Maikon"}
+            socialMedia={"@maikon"}
+            booking={"Link here"}
+          />
+
+          <ArtistCard
+            img={mariatattoo}
+            name={"Maria"}
+            socialMedia={"@maria"}
+            booking={"Link here"}
+          />
+        </div>
+      </div>
+    </>
+  );
+};
+
+     {/* card template */}
+          {/* <ArtistCard
+          img={}
+          name={}
+          socialMedia={}
+          booking={}
+          /> */}
+
+export default Artists;

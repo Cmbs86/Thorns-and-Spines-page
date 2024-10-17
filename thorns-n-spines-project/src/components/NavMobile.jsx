@@ -36,7 +36,7 @@ const NavMobile = () => {
             transition={{ duration: 0.2 }}
             className="flex w-full pb-[80vh]  "
           >
-            <ul className="w-[91%] flex flex-col m-0 p-0 mt-40  ">
+            <ul className="w-[91%] flex flex-col m-0 p-0 mt-28  ">
               {routes.map((route, idx) => {
                 const { Icon } = route;
 
@@ -59,7 +59,7 @@ const NavMobile = () => {
                       href={route.href}
                     >
                       {/* fix media queries of the link/routes */}
-                      <span className="flex text-2xl md:text-4xl mb-12 font-bold text-tns-ebony">
+                      <span className="flex text-3xl md:text-4xl mb-12 font-bold text-tns-ebony">
                         {route.title}
                       </span>
                       {/* <Icon className="text-xl" /> */}
