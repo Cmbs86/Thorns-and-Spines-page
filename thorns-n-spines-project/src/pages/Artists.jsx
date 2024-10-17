@@ -17,7 +17,7 @@ const Artists = () => {
         </div>
 
         {/* Wrapper for cards */}
-        <div className="max-w-[1600px] w-full mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="max-w-[1600px] w-full mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
 
      
 
