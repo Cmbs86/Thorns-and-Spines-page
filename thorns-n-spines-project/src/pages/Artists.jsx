@@ -8,7 +8,8 @@ import ArtistCard from "../components/ArtistCard.jsx";
 const Artists = () => {
   return (
     <>
-      <div className=" min-h-screen fle flex-col items-center justify-center">
+   
+      <main className="min-h-screen w-full border border-red-500 flex flex-col items-center justify-center">
         {/* Text section */}
         <div className="text-center my-8">
           <h1 className="text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
@@ -17,7 +18,7 @@ const Artists = () => {
         </div>
 
         {/* Wrapper for cards */}
-        <div className="max-w-[1600px] w-full mx-auto px-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <div className="max-w-[1600px] border border-yellow-600  mx-auto flex flex-col md:flex-row flex-wrap justify-around gap-y-10  ">
 
      
 
@@ -48,7 +49,7 @@ const Artists = () => {
             booking={"Link here"}
           />
         </div>
-      </div>
+      </main>
     </>
   );
 };
