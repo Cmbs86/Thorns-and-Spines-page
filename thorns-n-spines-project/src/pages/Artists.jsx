@@ -35,18 +35,22 @@ const Artists = () => {
           />
           <ArtistCard
             img={maikontattoo}
-            alt={"Maikon's photo"}
-            name={"Maikon"}
-            socialMedia={"@maikon"}
-            booking={"Link here"}
+            altTitle={"Maikon's photo"}
+            name={"Maikon Basei"}
+            link={"https://www.instagram.com/mknxbasei/"}
+            socialMedia={"@mknxbasei"}
+            booking={"mknxappointments@gmail.com"}
+            bookingText={"Email for appointments"}
           />
 
           <ArtistCard
             img={mariatattoo}
-            alt={"Maria's photo"}
-            name={"Maria"}
-            socialMedia={"@maria"}
-            booking={"Link here"}
+            altTitle={"Maria's photo"}
+            name={"Moona Autumn"}
+            link={"https://www.instagram.com/moona.autumn/"}
+            socialMedia={"@moona.autumn"}
+            booking={"4916091701753"}
+            bookingText={"Booking via WhatsApp"}
           />
           <ArtistCard
             img={mariatattoo}
