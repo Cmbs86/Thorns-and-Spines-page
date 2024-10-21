@@ -1,4 +1,4 @@
-import { link } from "framer-motion/client";
+
 import React from "react";
 
 const ArtistCard = ({ img, altTitle, name, socialMedia, link ,  booking, bookingText }) => {
@@ -17,9 +17,10 @@ const ArtistCard = ({ img, altTitle, name, socialMedia, link ,  booking, booking
           {name}
         </h3>
         </div>
-        <a href={link} className="block text-2xl text-tns-ebony" target="_blank">{socialMedia}</a>
-        <a href={`https://wa.me/${booking}`} className="mt-2  text-2xl text-tns-ebony " target="_blank">
-         {bookingText}
+        <a href={link} className="block text-2xl text-tns-ebony" target="_blank">
+         <span className="underline-animation">{socialMedia}</span></a>
+        <a href={booking} className="mt-2  text-2xl text-tns-ebony " rel="noopener noreferrer" target="_blank">
+        <span className="underline-animation-right">{bookingText}</span>
         </a>
         </div>
       </div>

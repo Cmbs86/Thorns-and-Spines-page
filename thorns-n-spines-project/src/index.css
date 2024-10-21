@@ -9,8 +9,6 @@
 
   color-scheme: light dark;
   color: #ece5e5;
-  ;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -30,13 +28,13 @@ a {
 }
 
 ul {
-  list-style:none;
-  padding-left: 30px ;
+  list-style: none;
+  padding-left: 30px;
 }
 
 ol {
-  list-style:decimal;
-  padding-left: 30px ;
+  list-style: decimal;
+  padding-left: 30px;
 }
 
 img {
@@ -45,7 +43,7 @@ img {
 }
 
 ::selection {
-  background-color: #FFF7D6;
+  background-color: #fff7d6;
   color: #242424;
 }
 
@@ -54,7 +52,7 @@ img {
 }
 
 ::-webkit-scrollbar-track {
-  background: #F0F5EB;
+  background: #f0f5eb;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -63,12 +61,13 @@ img {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #AFBCA1;
+  background: #afbca1;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  background: #161B22;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  background: #161b22;
   padding: 0.4em 1rem;
   line-height: 1.8;
   color: white;
@@ -78,11 +77,31 @@ code {
   /* overflow: auto; */
 
   &::-webkit-scrollbar {
-      height: 10px;
+    height: 10px;
   }
 }
 
 /* change later to thorns and spines default */
 body {
   @apply bg-tns-ash-gray-light text-tns-mint-cream;
+}
+
+@layer components {
+  .underline-animation {
+    @apply relative;
+  }
+  .underline-animation::after {
+    @apply absolute content-[''] w-full h-[1px] left-0 bottom-[-4px]
+     bg-tns-ebony scale-x-0 hover:scale-x-100 origin-bottom-right
+     hover:origin-bottom-left transition-transform duration-500;
+  }
+
+  .underline-animation-right {
+    @apply relative;
+  }
+  .underline-animation-right::after {
+    @apply absolute content-[''] w-full h-[1px] right-0 bottom-[-4px]
+     bg-tns-ebony scale-x-0 hover:scale-x-100 origin-bottom-left
+     hover:origin-bottom-right transition-transform duration-500;
+  }
 }
