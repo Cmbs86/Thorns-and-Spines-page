@@ -19,11 +19,11 @@ const Artists = () => {
 
         {/* Wrapper for cards */}
         {/* adjust wrapper size on large screens/ 2 cards per row only */}
-        <div className="max-w-[1600px]  mx-auto flex flex-col md:flex-row flex-wrap justify-around gap-y-10  ">
+        <div className="max-w-[1600px] mx-auto flex flex-col lg:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
           <ArtistCard
             img={SeppTattoo}
-            altTitle={"Sep's photo"}
-            name={"Sep"}
+            alt={"Sepp's photo"}
+            artist={"Sep"}
             link={"https://www.instagram.com/the_sepp_tattoo/"}
             socialMedia={"@the_sepp_tattoo"}
             booking={"mailto:thesepptattoo@gmail.com"}
@@ -32,8 +32,8 @@ const Artists = () => {
 
           <ArtistCard
             img={gabitattoo}
-            altTitle={"Gabi's photo"}
-            name={"Gabriela Gaedke"}
+            alt={"Gabi's photo"}
+            artist={"Gabriela Gaedke"}
             link={"https://www.instagram.com/thunderthestorm/"}
             socialMedia={"@thunderthestorm"}
             booking={"https://www.instagram.com/direct/t/104702077804895"}
@@ -41,8 +41,8 @@ const Artists = () => {
           />
           <ArtistCard
             img={maikontattoo}
-            altTitle={"Maikon's photo"}
-            name={"Maikon Basei"}
+            alt={"Maikon's photo"}
+            artist={"Maikon Basei"}
             link={"https://www.instagram.com/mknxbasei/"}
             socialMedia={"@mknxbasei"}
             booking={"mailto:mknxappointments@gmail.com"}
@@ -51,8 +51,8 @@ const Artists = () => {
 
           <ArtistCard
             img={mariatattoo}
-            altTitle={"Maria's photo"}
-            name={"Moona Autumn"}
+            alt={"Maria's photo"}
+            artist={"Moona Autumn"}
             link={"https://www.instagram.com/moona.autumn/"}
             socialMedia={"@moona.autumn"}
             booking={"https://wa.me/4916091701753"}
@@ -60,8 +60,8 @@ const Artists = () => {
           />
           <ArtistCard
             img={marczwg}
-            altTitle={"Marc's photo"}
-            name={"Marc Zwg"}
+            alt={"Marc's photo"}
+            artist={"Marc Zwg"}
             link={"https://www.instagram.com/marc.zwg/"}
             socialMedia={"@marc.zwg"}
             boooking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
