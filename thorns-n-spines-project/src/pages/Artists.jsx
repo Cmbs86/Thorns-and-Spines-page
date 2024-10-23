@@ -1,4 +1,7 @@
 import React from "react";
+import tiago from "../assets/images/tiago.webp";
+import daniela from "../assets/images/daniela.webp";
+import basti from "../assets/images/basti.webp";
 import SeppTattoo from "../assets/images/sepp.webp";
 import gabitattoo from "../assets/images/gabi.webp";
 import maikontattoo from "../assets/images/maikon.webp";
@@ -18,10 +21,37 @@ const Artists = () => {
         </div>
 
         {/* Wrapper for cards */}
-        {/* adjust wrapper size on large screens/ 2 cards per row only */}
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
-          
-          
+          <ArtistCard
+            img={tiago}
+            alt={"Tiago's photo"}
+            artist={"Tiago"}
+            link={"https://www.instagram.com/tiagoborgestattoos/"}
+            socialMedia={"@tiagoborgestattoos"}
+            booking={"https://www.instagram.com/direct/t/108115133917761"}
+            bookingText={"DM for appointments"}
+          />
+
+          <ArtistCard
+            img={daniela}
+            alt={"Daniela's photo"}
+            artist={"Daniela"}
+            link={"https://www.instagram.com/danielaspielberger/"}
+            socialMedia={"@danielaspielberger"}
+            booking={"https://www.instagram.com/direct/t/113920086666340"}
+            bookingText={"Bookings currently closed"}
+          />
+
+          <ArtistCard
+            img={basti}
+            alt={"Basti's photo"}
+            artist={"Basti"}
+            link={"https://www.instagram.com/bastidegroot/"}
+            socialMedia={"@bastidegroot"}
+            booking={"https://www.instagram.com/direct/t/108656357198639"}
+            bookingText={"DM for appointments"}
+          />
+
           <ArtistCard
             img={SeppTattoo}
             alt={"Sepp's photo"}
@@ -69,13 +99,6 @@ const Artists = () => {
             boooking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
             bookingText={"Email or DM for appointments"}
           />
-          {/* <ArtistCard
-            img={mariatattoo}
-            alt={"Maria's photo"}
-            name={"Maria"}
-            socialMedia={"@marc.zwg"}
-            booking={"Link here"}
-          /> */}
         </div>
       </main>
     </>
@@ -84,14 +107,19 @@ const Artists = () => {
 
 {
   /* card template */
-}
-{
-  /* <ArtistCard
+  {
+    /* <ArtistCard
           img={}
-          name={}
+          alt={}
+          artist={}
+          link={}
           socialMedia={}
           booking={}
-          /> */
+          bookingText={}
+          />  */
+  }
+}
+{
 }
 
 export default Artists;
