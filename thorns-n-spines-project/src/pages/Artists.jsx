@@ -12,14 +12,16 @@ const Artists = () => {
       <main className="min-h-screen w-full  flex flex-col items-center justify-center">
         {/* Text section */}
         <div className="text-center my-10">
-          <h1 className="text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
             Resident Artists
           </h1>
         </div>
 
         {/* Wrapper for cards */}
         {/* adjust wrapper size on large screens/ 2 cards per row only */}
-        <div className="max-w-[1600px] mx-auto flex flex-col lg:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
+        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
+          
+          
           <ArtistCard
             img={SeppTattoo}
             alt={"Sepp's photo"}
