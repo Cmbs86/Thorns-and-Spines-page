@@ -1,4 +1,4 @@
-import React from "react";
+import {useTranslation} from "react-i18next";
 import tiago from "../assets/images/tiago.webp";
 import daniela from "../assets/images/daniela.webp";
 import basti from "../assets/images/basti.webp";
@@ -10,6 +10,8 @@ import marczwg from "../assets/images/marc.webp";
 import sausageMan from "../assets/images/sausageman.webp";
 import ArtistCard from "../components/ArtistCard.jsx";
 const UpcomingGuests = () => {
+
+  const { t } = useTranslation();
   return (
   
    <>
@@ -17,7 +19,7 @@ const UpcomingGuests = () => {
         {/* Text section */}
         <div className="text-center my-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
-            Guest Artists
+            {t("guest_artists")}
           </h1>
         </div>
 

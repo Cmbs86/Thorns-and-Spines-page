@@ -10,27 +10,27 @@ export const useRoutes = () => {
 
   return [
     {
-      title: t('Home'),
+      title: t('home'),
       href: "/",
       Icon: BiHomeAlt2,
     },
     {
-      title: t('Artists'),
+      title: t('artists'),
       href: "/artists",
       Icon: FiSearch,
     },
     {
-      title: t('Studio'),
+      title: t('studio'),
       href: "/studio",
       Icon: IoPricetagsOutline,
     },
     {
-      title: t('Contact'),
+      title: t('contact'),
       href: "/contact",
       Icon: PiChatCircleBold,
     },
     {
-      title: t('Guest Artists'),
+      title: t('guest_artists'),
       href: "/upcoming-guests",
       Icon: PiChatCircleBold,
     },

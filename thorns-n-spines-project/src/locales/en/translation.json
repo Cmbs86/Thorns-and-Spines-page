@@ -1,10 +1,14 @@
 {
-  "Resident Artists": "Resident Artists",
-  "DM for appointments": "DM for appointments",
-  "Bookings currently closed": "Bookings currently closed",
-  "Home": "Home",
-  "Artists": "Artists",
-  "Studio": "Studio",
-  "Contact": "Contact",
-  "Guest Artists": "Guest Artists"
+  "resident_artists": "Resident Artists",
+  "email_appointments": "Email for appointments",
+  "dm_appointments": "DM for appointments",
+  "booking_closed": "Bookings currently closed",
+  "booking_whatsapp": "Bookings via WhatsApp",
+  "booking_dm_or_email": "Bookings via DM or Email",
+  "home": "Home",
+  "artists": "Artists",
+  "studio": "Studio",
+  "contact": "Contact",
+  "guest_artists": "Guest Artists",
+  "location": "location"
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import { useTranslation } from "react-i18next";
 import tiago from "../assets/images/tiago.webp";
 import daniela from "../assets/images/daniela.webp";
 import basti from "../assets/images/basti.webp";
@@ -10,13 +10,16 @@ import marczwg from "../assets/images/marc.webp";
 import ArtistCard from "../components/ArtistCard.jsx";
 
 const Artists = () => {
+
+  const { t } = useTranslation();
+  
   return (
     <>
       <main className="min-h-screen w-full  flex flex-col items-center justify-center">
         {/* Text section */}
         <div className="text-center my-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
-            Resident Artists
+            {t("resident_artists")}
           </h1>
         </div>
 
@@ -29,7 +32,7 @@ const Artists = () => {
             link={"https://www.instagram.com/tiagoborgestattoos/"}
             socialMedia={"@tiagoborgestattoos"}
             booking={"https://www.instagram.com/direct/t/108115133917761"}
-            bookingText={"DM for appointments"}
+            bookingText={t("dm_appointments")}
           />
 
           <ArtistCard
@@ -39,7 +42,7 @@ const Artists = () => {
             link={"https://www.instagram.com/danielaspielberger/"}
             socialMedia={"@danielaspielberger"}
             booking={"https://www.instagram.com/direct/t/113920086666340"}
-            bookingText={"Bookings currently closed"}
+            bookingText={t("booking_closed")}
           />
 
           <ArtistCard
@@ -49,7 +52,7 @@ const Artists = () => {
             link={"https://www.instagram.com/bastidegroot/"}
             socialMedia={"@bastidegroot"}
             booking={"https://www.instagram.com/direct/t/108656357198639"}
-            bookingText={"DM for appointments"}
+            bookingText={t("dm_appointments")}
           />
 
           <ArtistCard
@@ -59,7 +62,7 @@ const Artists = () => {
             link={"https://www.instagram.com/the_sepp_tattoo/"}
             socialMedia={"@the_sepp_tattoo"}
             booking={"mailto:thesepptattoo@gmail.com"}
-            bookingText={"Email for appointments"}
+            bookingText={t("email_appointments")}
           />
 
           <ArtistCard
@@ -69,7 +72,7 @@ const Artists = () => {
             link={"https://www.instagram.com/thunderthestorm/"}
             socialMedia={"@thunderthestorm"}
             booking={"https://www.instagram.com/direct/t/104702077804895"}
-            bookingText={"DM for appointments"}
+            bookingText={(t("dm_appointments"))}
           />
           <ArtistCard
             img={maikontattoo}
@@ -78,7 +81,7 @@ const Artists = () => {
             link={"https://www.instagram.com/mknxbasei/"}
             socialMedia={"@mknxbasei"}
             booking={"mailto:mknxappointments@gmail.com"}
-            bookingText={"Email for appointments"}
+            bookingText={t("email_appointments")}
           />
 
           <ArtistCard
@@ -88,7 +91,7 @@ const Artists = () => {
             link={"https://www.instagram.com/moona.autumn/"}
             socialMedia={"@moona.autumn"}
             booking={"https://wa.me/4916091701753"}
-            bookingText={"Booking via WhatsApp"}
+            bookingText={t("booking_whatsapp")}
           />
           <ArtistCard
             img={marczwg}
@@ -97,7 +100,7 @@ const Artists = () => {
             link={"https://www.instagram.com/marc.zwg/"}
             socialMedia={"@marc.zwg"}
             boooking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
-            bookingText={"Email or DM for appointments"}
+            bookingText={t("booking_dm_or_email")}
           />
         </div>
       </main>

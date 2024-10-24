@@ -1,10 +1,14 @@
 {
-  "Resident Artists": "Resident Artists (German translation)",
-  "DM for appointments": "DM für Termine",
-  "Bookings currently closed": "Buchungen derzeit geschlossen",
-  "Home": "Startseite",
-  "Artists": "Künstler",
-  "Studio": "Studio",
-  "Contact": "Kontakt",
-  "Guest Artists": "Gastkünstler"
+  "resident_artists": "Hauskünstler",
+  "email_appointments": "E-Mail für Termine",
+  "dm_appointments": "DM für Termine",
+  "booking_closed": "Buchungen derzeit geschlossen",
+  "booking_whatsapp": "Buchungen über WhatsApp",
+  "booking_dm_or_email": "Buchungen per DM oder E-Mail",
+  "home": "Startseite",
+  "artists": "Künstler",
+  "studio": "Studio",
+  "contact": "Kontakt",
+  "guest_artists": "Gastkünstler",
+  "location": "Standort"
 }
