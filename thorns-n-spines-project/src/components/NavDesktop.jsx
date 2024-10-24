@@ -1,6 +1,7 @@
-import { routes } from "../routes";
+import { useRoutes } from "../routes";
 
 const NavDesktop = () => {
+  const routes = useRoutes();
   return (
     <ul className="hidden md:flex md:items-center gap-5 text-sm">
       {routes.map((route) => {
