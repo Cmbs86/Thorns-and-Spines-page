@@ -3,11 +3,12 @@ import { useEffect, useRef } from "react";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
-import { routes } from "../routes";
+import { useRoutes } from "../routes";
 
 const NavMobile = () => {
   const [isOpen, setOpen] = useState(false);
   const ref = useRef(null);
+  const routes = useRoutes();
 
   useEffect(() => {
     if(isOpen){

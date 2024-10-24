@@ -1,3 +1,5 @@
+import LanguageSwitcher from "./LanguageSwitcher";
+
 const Footer = () => {
   return (
     <footer className="w-full ">
@@ -24,6 +26,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="flex text-center text-tns-ebony font-sans border-t border-tns-ebony ">
+        <LanguageSwitcher />
         <p className="flex md:pr-3 py-2 md:py-4 w-full justify-center md:justify-end  ">
           &copy; {new Date().getFullYear()} Thorns and Spines. All Rights
           Reserved.
