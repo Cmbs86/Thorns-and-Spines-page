@@ -10,6 +10,9 @@ export default {
         "tns-ebony": "#606954",
         "tns-ebony-dark": "#485040",
       },
+      boxShadow: {
+        overlay: "0px 4px 20px rgba(72, 80, 64, 0.5)", // tns-ebony-dark color shadow
+      },
       keyframes: {
         marquee: {
           "0%": { transform: "translateX(100%)" },
