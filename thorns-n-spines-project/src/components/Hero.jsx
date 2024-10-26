@@ -21,20 +21,20 @@ const Hero = () => {
         }}
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 2, ease: "easeOut" }}
       />
      <motion.div
-        className="absolute inset-0 bg-gradient-to-b from-transparent to-tns-ebony-dark"
+        className="absolute inset-0 bg-gradient-to-b from-transparent to-black"
         initial={{ opacity: 0 }}
-        animate={{ opacity: 0.6 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        animate={{ opacity: 0.9 }}
+        transition={{ duration: 2, ease: "easeInOut" }}
       />
       {/* Container for the hero content */}
       <motion.div
-        className="relative flex justify-center text-center items-end pb-10  sm:pb-20 h-full"
+        className="relative flex justify-center text-center items-end pb-14  sm:pb-28 h-full"
         initial={{ opacity: 0, y: 20}}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5, delay: 0.5 }}
+        transition={{ duration: 3, delay: 0.5 }}
       >
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  font-bold  text-tns-ash-gray-light font-sans">
          {t("welcome")}
