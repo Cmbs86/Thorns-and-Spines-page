@@ -15,16 +15,16 @@ const Artists = () => {
   
   return (
     <>
-      <main className="min-h-screen w-full  flex flex-col items-center justify-center">
+      <main className="min-h-screen w-full  flex flex-col items-center justify-center  ">
         {/* Text section */}
         <div className="text-center my-10">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans  ">
             {t("resident_artists")}
           </h1>
         </div>
 
         {/* Wrapper for cards */}
-        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
+        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 underline-animation-center ">
           <ArtistCard
             img={tiago}
             alt={"Tiago's photo"}
