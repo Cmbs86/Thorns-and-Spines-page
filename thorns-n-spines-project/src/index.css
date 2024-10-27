@@ -109,7 +109,7 @@ body {
     @apply relative;
   }
   .underline-animation-center::after {
-    @apply absolute content-[''] w-full h-[1px] left-0 bottom-[-4px]
+    @apply absolute content-[''] w-full h-[0.5px] left-0 bottom-[-4px]
      bg-tns-ebony scale-x-0 hover:scale-x-90 origin-center
      hover:origin-center transition-transform duration-500;
   }
