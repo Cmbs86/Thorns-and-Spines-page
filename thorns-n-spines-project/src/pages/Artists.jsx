@@ -10,7 +10,7 @@ import maikontattoo from "../assets/images/maikon.webp";
 import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
 import ArtistCard from "../components/ArtistCard.jsx";
-import Separator from "../components/Separator.jsx";
+import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
 
 const Artists = () => {
   const { t } = useTranslation();
@@ -106,7 +106,7 @@ const Artists = () => {
           />
         </div>
 
-        <Separator />
+        <AnimatedSeparator />
       </main>
     </>
   );

@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 
-const Separator = () => {
+const AnimatedSeparator = () => {
   const [isInView, setIsInView] = useState(false);
   const underlineRef = useRef(null);
 
@@ -36,4 +36,4 @@ const Separator = () => {
   );
 };
 
-export default Separator;
+export default AnimatedSeparator;
