@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
-import { useEffect, useRef, useState } from "react";
-import {motion} from "framer-motion";
+// import { useEffect, useRef, useState } from "react";
+import { motion } from "framer-motion";
 import tiago from "../assets/images/tiago.webp";
 import daniela from "../assets/images/daniela.webp";
 import basti from "../assets/images/basti.webp";
@@ -10,31 +10,11 @@ import maikontattoo from "../assets/images/maikon.webp";
 import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
 import ArtistCard from "../components/ArtistCard.jsx";
+import Separator from "../components/Separator.jsx";
 
 const Artists = () => {
-
   const { t } = useTranslation();
-  const [isInView, setIsInView] = useState(false);
-  const underlineRef = useRef(null);
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        setIsInView(entry.isIntersecting);
-      },
-      { threshold: 0.8 } // Adjust this value based on when you want the animation to trigger
-    );
-
-    if (underlineRef.current) {
-      observer.observe(underlineRef.current);
-    }
-    return () => {
-      if (underlineRef.current) {
-        observer.unobserve(underlineRef.current);
-      }
-    };
-  }, []);
-  
   return (
     <>
       <main className="min-h-screen w-full  flex flex-col items-center justify-center  ">
@@ -94,7 +74,7 @@ const Artists = () => {
             link={"https://www.instagram.com/thunderthestorm/"}
             socialMedia={"@thunderthestorm"}
             booking={"https://www.instagram.com/direct/t/104702077804895"}
-            bookingText={(t("dm_appointments"))}
+            bookingText={t("dm_appointments")}
           />
           <ArtistCard
             img={maikontattoo}
@@ -125,13 +105,8 @@ const Artists = () => {
             bookingText={t("booking_dm_or_email")}
           />
         </div>
-        <motion.div
-          ref={underlineRef}
-          className="w-[85%] h-[1px] bg-tns-ebony origin-center mt-10"
-          initial={{ scaleX: 0 }}
-          animate={{ scaleX: isInView ? 1 : 0 }}
-          transition={{ duration: 0.7 }}
-        />
+
+        <Separator />
       </main>
     </>
   );
