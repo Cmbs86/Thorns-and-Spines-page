@@ -1,6 +1,4 @@
 import { useTranslation } from "react-i18next";
-// import { useEffect, useRef, useState } from "react";
-import { motion } from "framer-motion";
 import tiago from "../assets/images/tiago.webp";
 import daniela from "../assets/images/daniela.webp";
 import basti from "../assets/images/basti.webp";
@@ -17,7 +15,7 @@ const Artists = () => {
 
   return (
     <>
-      <main className="min-h-screen w-full  flex flex-col items-center justify-center  ">
+      <main className="min-h-screen w-full flex flex-col items-center justify-center  ">
         {/* Text section */}
         <div className="text-center my-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans  ">

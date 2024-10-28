@@ -1,25 +1,23 @@
-import React from 'react'
-import Header from '../components/Header'
+import { useTranslation } from "react-i18next";
+
 
 const Contact = () => {
+  const { t } = useTranslation();
   return (
     <>
-   <div className="min-h-screen flex justify-center p-5 items-center">
-      <div className="space-y-5 text-center gap-5">
-        <h1 className="lg:text-6xl text-3xl  font-bold">
-       Contact us
-        </h1>
-        {/* <p className="max-w-lg text-sm leading-6">
-          This is a simple example of how to build an animate a hamburger menu
-          with React and Framer Motion. I hope you like it!
-        </p> */}
-        {/* <button className="px-5 py-3 bg-neutral-300 rounded-md text-sm text-stone-800">
-          Get Started
-        </button> */}
-      </div>
-    </div>
-    </>
-  )
-}
+      <main className="min-h-screen w-full flex flex-col items-center justify-center">
+      <div className="text-center my-10">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans  ">
+            {t("contact")}
+          </h1>
+        </div>
+        <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10">
 
-export default Contact
+
+        </div>
+      </main>
+    </>
+  );
+};
+
+export default Contact;
