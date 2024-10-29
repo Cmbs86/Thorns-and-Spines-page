@@ -9,6 +9,7 @@ import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
 import sausageMan from "../assets/images/sausageman.webp";
 import ArtistCard from "../components/ArtistCard.jsx";
+import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
 const UpcomingGuests = () => {
 
   const { t } = useTranslation();
@@ -103,6 +104,7 @@ const UpcomingGuests = () => {
             bookingText={"Email or DM for appointments"}
           />
         </div>
+        <AnimatedSeparator />
       </main>
     </>
 
