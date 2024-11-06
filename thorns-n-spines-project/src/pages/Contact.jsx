@@ -1,9 +1,11 @@
+import ContentLayout from "../layouts/ContentLayout.jsx";
 import { useTranslation } from "react-i18next";
 
 const Contact = () => {
   const { t } = useTranslation();
   return (
     <>
+    <ContentLayout>
       <main className="min-h-screen w-full flex flex-col items-center">
         <div className="text-center my-10">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans  ">
@@ -35,6 +37,7 @@ const Contact = () => {
           </div>
         </div>
       </main>
+      </ContentLayout>
     </>
   );
 };

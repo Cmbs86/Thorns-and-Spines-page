@@ -1,9 +1,9 @@
-import React from 'react'
-import Header from '../components/Header'
+import ContentLayout from "../layouts/ContentLayout.jsx"
 
 const Studio = () => {
   return (
       <>
+    <ContentLayout>
      <div className="min-h-screen flex justify-center p-5 items-center">
       
       <div className="space-y-5 text-center gap-5">
@@ -19,6 +19,7 @@ const Studio = () => {
         </button> */}
       </div>
     </div>
+    </ContentLayout>
       </>
 
 

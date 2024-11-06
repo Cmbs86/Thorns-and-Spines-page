@@ -1,3 +1,4 @@
+import ContentLayout from "../layouts/ContentLayout.jsx";
 import { useTranslation } from "react-i18next";
 import tiago from "../assets/images/tiago.webp";
 import daniela from "../assets/images/daniela.webp";
@@ -15,6 +16,7 @@ const Artists = () => {
 
   return (
     <>
+    <ContentLayout>
       <main className="min-h-screen w-full flex flex-col items-center justify-center  ">
         {/* Text section */}
         <div className="text-center my-10">
@@ -106,6 +108,7 @@ const Artists = () => {
 
         <AnimatedSeparator />
       </main>
+      </ContentLayout>
     </>
   );
 };

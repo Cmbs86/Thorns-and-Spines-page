@@ -10,12 +10,14 @@ import marczwg from "../assets/images/marc.webp";
 import sausageMan from "../assets/images/sausageman.webp";
 import ArtistCard from "../components/ArtistCard.jsx";
 import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
+import ContentLayout from "../layouts/ContentLayout.jsx";
 const UpcomingGuests = () => {
 
   const { t } = useTranslation();
   return (
   
    <>
+   <ContentLayout>
       <main className="min-h-screen w-full  flex flex-col items-center justify-center">
         {/* Text section */}
         <div className="text-center my-10">
@@ -106,6 +108,7 @@ const UpcomingGuests = () => {
         </div>
         <AnimatedSeparator />
       </main>
+      </ContentLayout>
     </>
 
   )
