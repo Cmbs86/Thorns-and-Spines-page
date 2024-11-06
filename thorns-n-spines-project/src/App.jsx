@@ -6,12 +6,12 @@ import Contact from "./pages/Contact.jsx";
 import Studio from "./pages/Studio.jsx";
 import UpcomingGuests from "./pages/UpcomingGuests.jsx";
 import NotFound from "./pages/NotFound.jsx";
-import Layout from "./layouts/Layout.jsx";
+import BaseLayout from "./layouts/BaseLayout.jsx";
 
 function App() {
   return (
     <>
-    <Layout>
+    <BaseLayout>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/studio" element={<Studio />} />
@@ -20,7 +20,7 @@ function App() {
         <Route path="/upcoming-guests" element={<UpcomingGuests />} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
-      </Layout>
+      </BaseLayout>
     </>
   );
 }

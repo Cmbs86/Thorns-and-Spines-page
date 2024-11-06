@@ -1,7 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-const Layout = ({ children }) => {
+const BaseLayout = ({ children }) => {
   return (<>
     <div className="min-h-screen">
       <Header />
@@ -14,4 +14,4 @@ const Layout = ({ children }) => {
   );
 };
 
-export default Layout;
+export default BaseLayout;

@@ -10,7 +10,7 @@ const AnimatedSeparator = () => {
       ([entry]) => {
         setIsInView(entry.isIntersecting);
       },
-      { threshold: 0.8 } // Adjust this value based on when you want the animation to trigger
+      { threshold: 0.8 } 
     );
 
     if (underlineRef.current) {

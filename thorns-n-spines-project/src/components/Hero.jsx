@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import ThornsHero from "../assets/images/hero.webp";
+import bannerNew from "../assets/images/bannerNew.webp";
+import anotherBanner from "../assets/images/anotherBanner.webp";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -13,7 +15,7 @@ const Hero = () => {
         className="absolute w-full h-full"
         style={{
          
-          backgroundImage: `url(${ThornsHero})`,
+          backgroundImage: `url(${anotherBanner})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -24,7 +26,7 @@ const Hero = () => {
         transition={{ duration: 2, ease: "easeOut" }}
       />
      <motion.div
-        className="absolute inset-0 bg-gradient-to-b from-transparent to-black"
+        className="absolute inset-0 bg-gradient-to-b from-transparent to-black/70"
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.9 }}
         transition={{ duration: 2, ease: "easeInOut" }}
