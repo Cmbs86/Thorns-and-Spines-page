@@ -11,16 +11,17 @@ import thorns8 from "../assets/images/thorns_8.webp";
 import thorns9 from "../assets/images/thorns_9.webp";
 import thorns10 from "../assets/images/thorns_10.webp";
 
+
 const images = [
   { src: thorns1, alt: "Studio Image 1", colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: thorns5, alt: "Studio Image 5", colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: thorns4, alt: "Studio Image 4", colSpan: "col-span-1", rowSpan: "row-span-1" }, // This spans 2 rows
   { src: thorns8, alt: "Studio Image 8", colSpan: "col-span-1", rowSpan: "row-span-1" },
-  { src: thorns10, alt: "Studio Image 10", colSpan: "col-span-1", rowSpan: "row-span-2" }, // Tall image spanning 2 rows and 2 columns
+  { src: thorns10, alt: "Studio Image 10", colSpan: "col-span-1", rowSpan: "sm:row-span-2" }, // Tall image spanning 2 rows and 2 columns
   { src: thorns7, alt: "Studio Image 7", colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: thorns6, alt: "Studio Image 6", colSpan: "col-span-1", rowSpan: "row-span-1" },
   { src: thorns2, alt: "Studio Image 2", colSpan: "col-span-1", rowSpan: "row-span-1" },
-  { src: thorns3, alt: "Studio Image 3", colSpan: "col-span-2", rowSpan: "row-span-1" },
+  { src: thorns3, alt: "Studio Image 3", colSpan: "sm:col-span-2", rowSpan: "row-span-1" },
   { src: thorns9, alt: "Studio Image 9", colSpan: "col-span-1", rowSpan: "row-span-1" },
 ];
 
@@ -36,7 +37,7 @@ const Studio = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-3 p-2 flex-wrap">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3  gap-3 px-2 flex-grow place-content-center ">
         {images.map((image, index) => (
           <div
             key={index}
@@ -50,6 +51,7 @@ const Studio = () => {
           </div>
         ))}
       </div>
+    
     </main>
   );
 };
