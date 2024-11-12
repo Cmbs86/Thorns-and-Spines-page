@@ -41,7 +41,7 @@ const Hero = () => {
         </h1>
       </motion.div>
     </div>
-    /* Work on the positioning here: Change absolute, fixed and relative. This might fix the problem with the footer, and the "hidden" on media queries. */
+    
   );
 };
 
