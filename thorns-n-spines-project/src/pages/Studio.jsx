@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 import thorns1 from "../assets/images/thorns_1.webp";
@@ -78,6 +78,7 @@ const images = [
 
 const Studio = () => {
   
+  const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   
@@ -90,8 +91,33 @@ const Studio = () => {
     setIsOpen(false);
   }
 
+const showPrevImage = () => {
+  setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length);
+};
 
-  const { t } = useTranslation();
+const showNextImage = () => {
+  setCurrentImageIndex((currentImageIndex + 1) % images.length);
+}
+
+useEffect(() => {
+  if(!isOpen) return;
+
+  const handleKeyDown = (e) => {
+    if(e.key === "ArrowLeft"){
+      showPrevImage();
+    }else if(e.key === "ArrowRight"){
+      showNextImage();
+    }else if(e.key === "Escape"){
+      closeLightbox();
+    }
+  };
+
+
+  document.addEventListener("keydown", handleKeyDown);
+  return () => document.removeEventListener("keydown", handleKeyDown);
+}, [isOpen, currentImageIndex]);
+
+
 
   return (
     <main className="flex flex-col min-h-screen">
@@ -122,7 +148,7 @@ const Studio = () => {
           <div className="relative w-[95%] xl:w-[75%] 2xl:w-[70%] xl:py-20  max-h-screen">
             <button
             onClick={closeLightbox}
-            className="absolute top-2 right-2 text-white text-2xl font-bold"
+            className="absolute  right-2 text-tns-ash-gray text-3xl font-bold"
             >
               &times;
               </button>
@@ -137,7 +163,7 @@ const Studio = () => {
                 onClick={() =>
                   setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length)
                 }
-                className= "absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 text-white text-3xl font-bold bg-gray-700 bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
+                className= "absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray text-3xl font-bold"
                 >
                 &#8592;
                 </button>
@@ -146,7 +172,7 @@ const Studio = () => {
                 onClick={() =>
                   setCurrentImageIndex((currentImageIndex + 1) % images.length)
                 }
-                className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 text-white text-3xl font-bold bg-gray-700 bg-opacity-50 p-2 rounded-full hover:bg-opacity-75"
+                className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray text-3xl font-bold"
                 
                 >
                  &#8594;
