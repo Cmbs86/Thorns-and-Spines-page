@@ -1,10 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import ThornsHero from "../assets/images/hero.webp";
-import bannerNew from "../assets/images/bannerNew.webp";
-import anotherBanner from "../assets/images/anotherBanner.webp";
-import newBanner from "../assets/images/thorns_1.webp";
-import newBanner2 from "../assets/images/thorns_2.webp";
+import newBanner from "../assets/images/banner.webp";
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -17,7 +13,7 @@ const Hero = () => {
         className="absolute w-full h-full"
         style={{
          
-          backgroundImage: `url(${newBanner2})`,
+          backgroundImage: `url(${newBanner})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
@@ -45,7 +41,7 @@ const Hero = () => {
         </h1>
       </motion.div>
     </div>
-    /* Work on the positioning here: Change absolute, fixed and relative. This might fix the problem with the footer, and the "hidden" on media queries. */
+    
   );
 };
 

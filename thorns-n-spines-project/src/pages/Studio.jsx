@@ -1,29 +1,188 @@
-import ContentLayout from "../layouts/ContentLayout.jsx"
+import { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+
+import thorns1 from "../assets/images/thorns_1.webp";
+import thorns2 from "../assets/images/thorns_2.webp";
+import thorns3 from "../assets/images/thorns_3.webp";
+import thorns4 from "../assets/images/thorns_4.webp";
+import thorns5 from "../assets/images/thorns_5.webp";
+import thorns6 from "../assets/images/thorns_6.webp";
+import thorns7 from "../assets/images/thorns_7.webp";
+import thorns8 from "../assets/images/thorns_8.webp";
+import thorns9 from "../assets/images/thorns_9.webp";
+import thorns10 from "../assets/images/thorns_10.webp";
+
+const images = [
+  {
+    src: thorns1,
+    alt: "Studio Image 1",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    src: thorns5,
+    alt: "Studio Image 5",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    src: thorns4,
+    alt: "Studio Image 4",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  }, // This spans 2 rows
+  {
+    src: thorns8,
+    alt: "Studio Image 8",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    src: thorns10,
+    alt: "Studio Image 10",
+    colSpan: "col-span-1",
+    rowSpan: "sm:row-span-2",
+  }, // Tall image spanning 2 rows and 2 columns
+  {
+    src: thorns7,
+    alt: "Studio Image 7",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    src: thorns6,
+    alt: "Studio Image 6",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    src: thorns2,
+    alt: "Studio Image 2",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+  {
+    src: thorns3,
+    alt: "Studio Image 3",
+    colSpan: "sm:col-span-2",
+    rowSpan: "row-span-1",
+  },
+  {
+    src: thorns9,
+    alt: "Studio Image 9",
+    colSpan: "col-span-1",
+    rowSpan: "row-span-1",
+  },
+];
+
 
 const Studio = () => {
-  return (
-      <>
-    <ContentLayout>
-     <div className="min-h-screen flex justify-center p-5 items-center">
-      
-      <div className="space-y-5 text-center gap-5">
-        <h1 className="lg:text-6xl text-3xl  font-bold">
-        The Studio
-        </h1>
-        {/* <p className="max-w-lg text-sm leading-6">
-          This is a simple example of how to build an animate a hamburger menu
-          with React and Framer Motion. I hope you like it!
-        </p> */}
-        {/* <button className="px-5 py-3 bg-neutral-300 rounded-md text-sm text-stone-800">
-          Get Started
-        </button> */}
-      </div>
-    </div>
-    </ContentLayout>
-      </>
+  
+  const { t } = useTranslation();
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  
+  const openLightbox = (index) => {
+    setCurrentImageIndex(index);
+    setIsOpen(true);
+  }
+  
+  const closeLightbox = () => {
+    setIsOpen(false);
+  }
 
+const showPrevImage = () => {
+  setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length);
+};
 
-  )
+const showNextImage = () => {
+  setCurrentImageIndex((currentImageIndex + 1) % images.length);
 }
 
-export default Studio
+useEffect(() => {
+  if(!isOpen) return;
+
+  const handleKeyDown = (e) => {
+    if(e.key === "ArrowLeft"){
+      showPrevImage();
+    }else if(e.key === "ArrowRight"){
+      showNextImage();
+    }else if(e.key === "Escape"){
+      closeLightbox();
+    }
+  };
+
+
+  document.addEventListener("keydown", handleKeyDown);
+  return () => document.removeEventListener("keydown", handleKeyDown);
+}, [isOpen, currentImageIndex]);
+
+
+
+  return (
+    <main className="flex flex-col min-h-screen">
+      <div className="flex justify-center text-center my-10">
+        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans">
+          {t("The studio")}
+        </h1>
+      </div>
+
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-2 flex-grow place-content-center ">
+        {images.map((image, index) => (
+          <div
+            key={index}
+            className={`overflow-hidden ${image.colSpan} ${image.rowSpan}`}
+            onClick={() => openLightbox(index)}
+          >
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+            />
+          </div>
+        ))}
+      </div>
+      {/* Lightbox Modal */}
+      {isOpen && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50 ">
+          <div className="relative w-[95%] xl:w-[75%] 2xl:w-[70%] xl:py-20  max-h-screen">
+            <button
+            onClick={closeLightbox}
+            className="absolute  right-2 text-tns-ash-gray text-3xl font-bold"
+            >
+              &times;
+              </button>
+              <img
+              src={images[currentImageIndex].src}
+              alt={images[currentImageIndex].alt}
+              className="w-full h-auto max-h-screen object-contain"
+              
+              />
+              <div className="flex justify-between mt-4">
+                <button
+                onClick={() =>
+                  setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length)
+                }
+                className= "absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray text-3xl font-bold"
+                >
+                &#8592;
+                </button>
+                <button
+                
+                onClick={() =>
+                  setCurrentImageIndex((currentImageIndex + 1) % images.length)
+                }
+                className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray text-3xl font-bold"
+                
+                >
+                 &#8594;
+                </button>
+              </div>
+          </div>
+        </div>
+      )}
+    </main>
+  );
+};
+
+export default Studio;

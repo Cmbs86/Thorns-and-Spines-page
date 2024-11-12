@@ -8,7 +8,7 @@ const Contact = () => {
   return (
     <>
       <ContentLayout>
-        <main className="min-h-screen w-full flex flex-col items-center">
+        <main className="w-full flex flex-col items-center">
           <div className="text-center mt-10 mb-10 md:mb-16   lg:mb-24">
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans  ">
               {t("contact")}
