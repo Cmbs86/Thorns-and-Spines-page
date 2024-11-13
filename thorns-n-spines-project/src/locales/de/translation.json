@@ -1,5 +1,5 @@
 {
-  "resident_artists": "Hauskünstler",
+  "resident_artists": "Künstler",
   "email_appointments": "E-Mail für Termine",
   "dm_appointments": "DM für Termine",
   "booking_closed": "Buchungen derzeit geschlossen",
@@ -9,7 +9,10 @@
   "artists": "Künstler",
   "studio": "Studio",
   "contact": "Kontakt",
-  "guest_artists": "Gastkünstler",
+  "guest_artists": "Gäste",
   "location": "Standort",
-  "welcome": "Willkommen bei Thorns & Spines"
+  "welcome": "Willkommen bei Thorns & Spines",
+  "our_address": "Unsere Adresse",
+  "contact_us": "Kontakt"
+
 }
