@@ -9,7 +9,7 @@ const Contact = () => {
     <>
       <ContentLayout>
         <main className="w-full flex flex-col items-center">
-          <div className="text-center mt-10 mb-10 md:mb-16   lg:mb-24">
+          <div className="text-center my-10 md:mb-16 lg:mb-24">
             <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans  ">
               {t("contact")}
             </h1>
@@ -31,16 +31,17 @@ const Contact = () => {
               <section className="flex flex-col gap-y-10  justify-center items-center">
                 <div className="w-full">
                   <h3 className="text-3xl md:text-4xl lg:text-6xl text-center lg:text-start">
-                    Our Address:
+                   {t("our_address" )}
                   </h3>
                 </div>
-                <h1 className="text-3xl md:text-4xl lg:text-6xl">
+                {/* change mb-10 here for more if needed and check animated separator on media queries */}
+                <h1 className="mb-12 text-3xl md:text-4xl lg:text-6xl">
                   Dreilindenstraße 25,
                   <span className="block mt-1">04177</span>
                   <span className="block mt-1">Leipzig</span>
                 </h1>
 
-                <div className="max-w-[600px]">
+                {/* <div className="max-w-[600px]">
                   <p className="lg:text-xl py-2 pl-1 text-center lg:text-start font-sans   ">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Possimus voluptatum commodi doloribus consequatur est quis,
@@ -50,17 +51,18 @@ const Contact = () => {
                     soluta, iusto pariatur voluptas ex animi recusandae aliquam.
                     Rerum quos pariatur expedita cum?
                   </p>
-                </div>
+                </div> */}
               </section>
             </div>
           </div>
-
+          {/* <AnimatedSeparator /> */}
           {/* Contact form container */}
           <div className="flex flex-wrap gap-12 w-full my-20 justify-around items-center">
             <div className="flex flex-wrap  text-tns-ebony lg:w-[750px] lg:h-[500px]    ">
               <div className="w-full text-center">
-                <h1 className="text-3xl md:text-4xl lg:text-6xl text-center  font-sans font-bold mb-10 lg:mb-0 mt-5  ">Contact Us</h1>
+                <h1 className="text-3xl md:text-4xl lg:text-6xl text-center  font-sans font-bold mb-10 lg:mb-0 mt-5">{t("contact_us")}</h1>
               </div>
+              {/* create little text this section */}
               <div className="">
                 <p className="lg:text-xl py-2 pl-1 text-center lg:text-start font-sans font-bold">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -83,13 +85,13 @@ const Contact = () => {
                   <div className="flex space-x-4">
                     <input
                       type="text"
-                      placeholder="First Name"
+                      placeholder={t("first_name")}
                       required
                       className="w-full p-3 bg-tns-mint-cream border border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony"
                     />
                     <input
                       type="text"
-                      placeholder="Last Name"
+                      placeholder={t("last_name")}
                       required
                       className="w-full p-3  bg-tns-mint-cream  border border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony"
                     />
@@ -115,7 +117,7 @@ const Contact = () => {
                     Message{" "}
                   </label>
                   <textarea
-                    placeholder="Message"
+                    placeholder={t("message")}
                     required
                     rows="5"
                     className="w-full p-3 border bg-tns-mint-cream border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony resize-none"
@@ -128,7 +130,7 @@ const Contact = () => {
                     type="submit"
                     className="px-6 py-3 text-tns-ebony-dark border-2 border-tns-ebony  font-semibold hover:bg-tns-ebony hover:text-tns-mint-cream transition-colors"
                   >
-                    SEND
+                    {t("send")}
                   </button>
                 </div>
               </form>

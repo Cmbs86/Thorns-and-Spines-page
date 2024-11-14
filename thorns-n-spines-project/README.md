@@ -39,8 +39,3 @@ Currently, two official plugins are available:
 
 - Contact us form that redirects to the shop email.
 - " for appointments direct with the artist or via email to the shop".
-
-
-**Guest Pages **
-
-- The same as Artist page but with date, Instagram, Booking direct with the artists.

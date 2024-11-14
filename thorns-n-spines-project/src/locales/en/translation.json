@@ -8,8 +8,15 @@
   "home": "Home",
   "artists": "Artists",
   "studio": "Studio",
+  "the_studio": "The Studio",
   "contact": "Contact",
   "guest_artists": "Guest Artists",
   "location": "location",
-  "welcome": "Welcome to Thorns & Spines"
+  "welcome": "Welcome to Thorns & Spines",
+  "our_address": "Our Address:",
+  "contact_us": "Contact",
+  "first_name": "First Name",
+  "last_name": "Last Name",
+  "message": "Message",
+  "send": "Send"
 }

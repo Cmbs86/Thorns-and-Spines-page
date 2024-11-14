@@ -75,59 +75,68 @@ const images = [
   },
 ];
 
-
 const Studio = () => {
-  
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  
+
   const openLightbox = (index) => {
     setCurrentImageIndex(index);
     setIsOpen(true);
-  }
-  
-  const closeLightbox = () => {
-    setIsOpen(false);
-  }
-
-const showPrevImage = () => {
-  setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length);
-};
-
-const showNextImage = () => {
-  setCurrentImageIndex((currentImageIndex + 1) % images.length);
-}
-
-useEffect(() => {
-  if(!isOpen) return;
-
-  const handleKeyDown = (e) => {
-    if(e.key === "ArrowLeft"){
-      showPrevImage();
-    }else if(e.key === "ArrowRight"){
-      showNextImage();
-    }else if(e.key === "Escape"){
-      closeLightbox();
-    }
   };
 
+  const closeLightbox = () => {
+    setIsOpen(false);
+  };
 
-  document.addEventListener("keydown", handleKeyDown);
-  return () => document.removeEventListener("keydown", handleKeyDown);
-}, [isOpen, currentImageIndex]);
+  const showPrevImage = () => {
+    setCurrentImageIndex(
+      (currentImageIndex - 1 + images.length) % images.length
+    );
+  };
 
+  const showNextImage = () => {
+    setCurrentImageIndex((currentImageIndex + 1) % images.length);
+  };
 
+  useEffect(() => {
+    if (!isOpen) return;
+
+    const handleKeyDown = (e) => {
+      if (e.key === "ArrowLeft") {
+        showPrevImage();
+      } else if (e.key === "ArrowRight") {
+        showNextImage();
+      } else if (e.key === "Escape") {
+        closeLightbox();
+      }
+    };
+
+    document.addEventListener("keydown", handleKeyDown);
+    return () => document.removeEventListener("keydown", handleKeyDown);
+  }, [isOpen, currentImageIndex]);
+
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   return (
     <main className="flex flex-col min-h-screen">
-      <div className="flex justify-center text-center my-10">
-        <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans">
-          {t("The studio")}
+      <div className="flex justify-center text-center my-10 md:mb-16 lg:mb-20">
+        <h1 className="text-3xl md:text-6xl font-bold text-tns-ebony font-sans">
+          {t("the_studio")}
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 px-2 flex-grow place-content-center ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 px-2 flex-grow  ">
         {images.map((image, index) => (
           <div
             key={index}
@@ -147,37 +156,36 @@ useEffect(() => {
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50 ">
           <div className="relative w-[95%] xl:w-[75%] 2xl:w-[70%] xl:py-20  max-h-screen">
             <button
-            onClick={closeLightbox}
-            className="absolute  right-2 text-tns-ash-gray text-3xl font-bold"
+              onClick={closeLightbox}
+              className="absolute  right-2 text-tns-ash-gray text-sm md:text-xl lg:text-2xl font-bold"
             >
               &times;
-              </button>
-              <img
+            </button>
+            <img
               src={images[currentImageIndex].src}
               alt={images[currentImageIndex].alt}
               className="w-full h-auto max-h-screen object-contain"
-              
-              />
-              <div className="flex justify-between mt-4">
-                <button
+            />
+            <div className="flex justify-between mt-4">
+              <button
                 onClick={() =>
-                  setCurrentImageIndex((currentImageIndex - 1 + images.length) % images.length)
+                  setCurrentImageIndex(
+                    (currentImageIndex - 1 + images.length) % images.length
+                  )
                 }
-                className= "absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray text-3xl font-bold"
-                >
+                className="absolute left-2 md:left-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray md:text-xl lg:text-2xl font-bold"
+              >
                 &#8592;
-                </button>
-                <button
-                
+              </button>
+              <button
                 onClick={() =>
                   setCurrentImageIndex((currentImageIndex + 1) % images.length)
                 }
-                className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray text-3xl font-bold"
-                
-                >
-                 &#8594;
-                </button>
-              </div>
+                className="absolute right-2 md:right-6 top-1/2 transform -translate-y-1/2 text-tns-ash-gray  text-xl lg:text-2xl font-bold"
+              >
+                &#8594;
+              </button>
+            </div>
           </div>
         </div>
       )}
