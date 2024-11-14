@@ -45,7 +45,7 @@ const UpcomingGuests = () => {
             link={"https://www.instagram.com/danielaspielberger/"}
             socialMedia={"@danielaspielberger"}
             booking={"https://www.instagram.com/direct/t/113920086666340"}
-            bookingText={"Bookings currently closed"}
+            bookingText={t("booking_closed")}
           />
 
           <ArtistCard
@@ -55,7 +55,7 @@ const UpcomingGuests = () => {
             link={"https://www.instagram.com/bastidegroot/"}
             socialMedia={"@bastidegroot"}
             booking={"https://www.instagram.com/direct/t/108656357198639"}
-            bookingText={"DM for appointments"}
+            bookingText={t("dm_appointments")}
           />
 
           <ArtistCard
@@ -65,7 +65,7 @@ const UpcomingGuests = () => {
             link={"https://www.instagram.com/the_sepp_tattoo/"}
             socialMedia={"@the_sepp_tattoo"}
             booking={"mailto:thesepptattoo@gmail.com"}
-            bookingText={"Email for appointments"}
+            bookingText={t("email_appointments")}
           />
 
           <ArtistCard
@@ -84,7 +84,7 @@ const UpcomingGuests = () => {
             link={"https://www.instagram.com/mknxbasei/"}
             socialMedia={"@mknxbasei"}
             booking={"mailto:mknxappointments@gmail.com"}
-            bookingText={"Email for appointments"}
+            bookingText={t("email_appointments")}
           />
 
           <ArtistCard
@@ -94,7 +94,7 @@ const UpcomingGuests = () => {
             link={"https://www.instagram.com/moona.autumn/"}
             socialMedia={"@moona.autumn"}
             booking={"https://wa.me/4916091701753"}
-            bookingText={"Booking via WhatsApp"}
+            bookingText={t("booking_whatsapp")}
           />
           <ArtistCard
             img={marczwg}
@@ -103,7 +103,7 @@ const UpcomingGuests = () => {
             link={"https://www.instagram.com/marc.zwg/"}
             socialMedia={"@marc.zwg"}
             boooking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
-            bookingText={"Email or DM for appointments"}
+            bookingText={t("email_appointments")}
           />
         </div>
         <AnimatedSeparator />

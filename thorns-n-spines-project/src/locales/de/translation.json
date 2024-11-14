@@ -8,11 +8,18 @@
   "home": "Startseite",
   "artists": "Künstler",
   "studio": "Studio",
+  "the_studio": "Das Studio",
   "contact": "Kontakt",
   "guest_artists": "Gäste",
   "location": "Standort",
   "welcome": "Willkommen bei Thorns & Spines",
-  "our_address": "Unsere Adresse",
-  "contact_us": "Kontakt"
+  "our_address": "Unsere Adresse:",
+  "contact_us": "Kontakt",
+  "first_name": "Vorname",
+  "last_name": "Nachname",
+  "message": "Nachricht",
+  "send": "Senden"
+
+
 
 }
