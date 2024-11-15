@@ -17,7 +17,11 @@ const Contact = () => {
             </h1>
           </div>
           {/* map container */}
-          <div className={`flex ${isBelowLg ? "flex-col" : "flex-row"} gap-8 px-8  w-full justify-around items-center`}>
+          <div
+            className={`flex ${
+              isBelowLg ? "flex-col" : "flex-row"
+            } gap-8 px-8  w-full justify-around items-center`}
+          >
             <div className="flex w-[350px] h-[200px] sm:w-[450px] sm:h-[280px] md:w-[550px] md:h-[380px] lg:w-[650px] lg:h-[480px] border-tns-ebony border">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2492.6304376548464!2d12.336780076811534!3d51.33631692318685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a6f7f3b8c9cf13%3A0x348b2585962a6112!2sThorns%20and%20Spines!5e0!3m2!1sen!2sde!4v1730383847564!5m2!1sen!2sde"
@@ -33,7 +37,7 @@ const Contact = () => {
               <section className="flex flex-col gap-y-10  justify-center items-center">
                 <div className="w-full">
                   <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-start">
-                   {t("our_address" )}
+                    {t("our_address")}
                   </h3>
                 </div>
                 {/* change mb-10 here for more if needed and check animated separator on media queries */}
@@ -42,17 +46,21 @@ const Contact = () => {
                   <span className="block mt-1">04177</span>
                   <span className="block mt-1">Leipzig</span>
                 </h1>
-
               </section>
             </div>
-            {isBelowLg &&  <AnimatedSeparator /> }
-         
+            {isBelowLg && <AnimatedSeparator />}
           </div>
           {/* Contact form container */}
-          <div className={`flex ${isBelowLg ? "flex-col" : "flex-row"} my-20 gap-8 px-8  w-full justify-around items-center`}>
+          <div
+            className={`flex ${
+              isBelowLg ? "flex-col" : "flex-row"
+            } my-20 gap-8 px-8  w-full justify-around items-center`}
+          >
             <div className="flex flex-wrap  text-tns-ebony lg:w-[750px] lg:h-[500px]    ">
               <div className="w-full text-center">
-                <h1 className="text-3xl md:text-4xl lg:text-6xl text-center  font-sans font-bold mb-10 lg:mb-0 mt-5">{t("contact_us")}</h1>
+                <h1 className="text-3xl md:text-4xl lg:text-6xl text-center  font-sans font-bold mb-10 lg:mb-0 mt-5">
+                  {t("contact_us")}
+                </h1>
               </div>
               {/* create little text this section */}
               <div className="">
