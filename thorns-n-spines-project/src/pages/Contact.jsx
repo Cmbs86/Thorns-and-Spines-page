@@ -1,10 +1,11 @@
 import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
 import ContentLayout from "../layouts/ContentLayout.jsx";
 import { useTranslation } from "react-i18next";
-
+import useMediaQuery from "../hooks/useMediaQuery.js";
 const Contact = () => {
   const { t } = useTranslation();
 
+  const isBelowLg = useMediaQuery("(max-width:1024px)");
   return (
     <>
       <ContentLayout>
@@ -54,8 +55,9 @@ const Contact = () => {
                 </div> */}
               </section>
             </div>
+            {isBelowLg &&  <AnimatedSeparator /> }
+         
           </div>
-          {/* <AnimatedSeparator /> */}
           {/* Contact form container */}
           <div className="flex flex-wrap gap-12 w-full my-20 justify-around items-center">
             <div className="flex flex-wrap  text-tns-ebony lg:w-[750px] lg:h-[500px]    ">
