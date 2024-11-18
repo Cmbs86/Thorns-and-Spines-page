@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './index.css';
-import '../src/i18m.js'; // Import i18n configuration here
+import '../src/i18m.js'; 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
