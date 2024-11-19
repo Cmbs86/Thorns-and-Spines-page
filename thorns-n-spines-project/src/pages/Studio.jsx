@@ -147,7 +147,7 @@ const Studio = () => {
             <img
               src={image.src}
               alt={image.alt}
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-300 cursor-pointer"
+              className="w-full h-full object-cover  cursor-pointer"
             />
           </div>
         ))}
@@ -155,10 +155,10 @@ const Studio = () => {
       {/* Lightbox Modal */}
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50 ">
-          <div className="relative w-[95%] xl:w-[75%] 2xl:w-[70%] xl:py-20  max-h-screen">
+          <div className="relative w-[95%] xl:w-[75%]   ">
             <button
               onClick={closeLightbox}
-              className="absolute  right-2 text-tns-ash-gray text-sm md:text-xl lg:text-2xl font-bold"
+              className="absolute right-2 text-tns-ash-gray text-sm md:text-xl lg:text-2xl font-bold"
             >
               &times;
             </button>
