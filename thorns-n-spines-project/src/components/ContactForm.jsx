@@ -5,32 +5,30 @@ import { useTranslation } from "react-i18next";
 const ContactForm = () => {
   const { t } = useTranslation();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [stateMessage, setStateMessage] = useState(null);
+  const [isSent, setIsSent] = useState(false);
   const sendEmail = (e) => {
     e.persist();
     e.preventDefault();
     setIsSubmitting(true);
-    emailjs.sendForm(
-        import.meta.env.VITE_SERVICE_ID,     // Updated
-        import.meta.env.VITE_TEMPLATE_ID,   // Updated
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
         e.target,
-        import.meta.env.VITE_PUBLIC_KEY,     // Updated
+        import.meta.env.VITE_PUBLIC_KEY,
         console.log(import.meta.env.VITE_SERVICE_ID)
       )
       .then(
         (result) => {
-          setStateMessage("Message sent!");
+          setIsSent(true);
           setIsSubmitting(false);
           setTimeout(() => {
-            setStateMessage(null);
-          }, 5000); // hide message after 5 seconds
+            setIsSent(null);
+          }, 7000); // hide message after 7 seconds
         },
         (error) => {
-          setStateMessage("Something went wrong, please try again later");
+          console.error("Failed to send email. Error: ", error);
           setIsSubmitting(false);
-          setTimeout(() => {
-            setStateMessage(null);
-          }, 5000); // hide message after 5 seconds
         }
       );
 
@@ -86,11 +84,16 @@ const ContactForm = () => {
         />
       </div>
       <div className="flex justify-center">
-      <input type="submit" 
-      value="Send" 
-      disabled={isSubmitting}
-      className="px-6 py-3 text-tns-ebony-dark border-2 border-tns-ebony  font-semibold hover:bg-tns-ebony hover:text-tns-mint-cream transition-colors" />
-      {stateMessage && <p>{stateMessage}</p>}
+        <input
+          type="submit"
+          value={isSent ? t("sent") : isSubmitting ? t("sending") : t("send")}
+          disabled={isSubmitting}
+          className={`px-6 py-3 text-tns-ebony-dark border-2 border-tns-ebony font-semibold transition-colors ${
+            isSent
+              ? "bg-tns-ebony-dark text-tns-mint-cream"
+              : "hover:bg-tns-ebony hover:text-tns-mint-cream"
+          }`}
+        />
       </div>
     </form>
   );

@@ -18,7 +18,9 @@
   "first_name": "Vorname",
   "last_name": "Nachname",
   "message": "Nachricht",
-  "send": "Senden"
+  "send": "Senden",
+  "sending": "Wird gesendet",
+  "sent": "Gesendet!"
 
 
 
