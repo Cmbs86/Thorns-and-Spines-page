@@ -22,6 +22,8 @@ const ArtistCard = ({ img, alt, artist, socialMedia, link ,  booking, bookingTex
         <a href={booking} className="mt-2 text-lg sm:text-xl  lg:text-2xl text-tns-ebony " rel="noopener noreferrer" target="_blank">
         <span className="underline-animation-right">{bookingText}</span>
         </a>
+      
+        
         </div>
       </div>
     </>

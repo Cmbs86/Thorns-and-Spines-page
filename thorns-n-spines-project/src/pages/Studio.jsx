@@ -116,6 +116,7 @@ const Studio = () => {
     return () => document.removeEventListener("keydown", handleKeyDown);
   }, [isOpen, currentImageIndex]);
 
+  //stop scrolling when lightbox is open
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = "hidden";
@@ -164,7 +165,7 @@ const Studio = () => {
             <img
               src={images[currentImageIndex].src}
               alt={images[currentImageIndex].alt}
-              className="w-full h-auto max-h-screen object-contain"
+              className="w-full h-auto max-h-screen object-contain mx-auto "
             />
             <div className="flex justify-between mt-4">
               <button
