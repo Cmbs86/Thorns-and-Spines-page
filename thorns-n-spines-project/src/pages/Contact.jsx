@@ -67,13 +67,7 @@ const Contact = () => {
               {/* create little text this section */}
               <div className="">
                 <p className="lg:text-xl py-2 pl-1 text-center lg:text-start font-sans font-bold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus voluptatum commodi doloribus consequatur est quis,
-                  esse consequuntur suscipit voluptas adipisci placeat similique
-                  nam quaerat libero quod omnis tempora quia facilis provident
-                  nesciunt dolorem perferendis quae delectus. Nihil soluta,
-                  iusto pariatur voluptas ex animi recusandae aliquam. Rerum
-                  quos pariatur expedita cum?
+                  {t("contact_us_message")}
                 </p>
               </div>
             </div>
