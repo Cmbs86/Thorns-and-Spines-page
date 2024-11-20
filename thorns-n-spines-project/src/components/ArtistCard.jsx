@@ -1,7 +1,7 @@
 
 import React from "react";
 
-const ArtistCard = ({ img, alt, artist, socialMedia, link ,  booking, bookingText }) => {
+const ArtistCard = ({ img, alt, title, artist, socialMedia, link ,  booking, bookingText }) => {
   return (
     
     <>
@@ -9,6 +9,7 @@ const ArtistCard = ({ img, alt, artist, socialMedia, link ,  booking, bookingTex
         <img
           src={img}
           alt={alt}
+          title={title}
           className="rounded-full w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[450px] lg:h-[450px] xl:w-[475px] xl:h-[475px] object-cover mx-auto"
         />
         <div className="mt-8">

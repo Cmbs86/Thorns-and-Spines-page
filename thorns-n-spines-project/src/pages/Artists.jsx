@@ -30,16 +30,19 @@ const Artists = () => {
           <ArtistCard
             img={tiago}
             alt={"Tiago's photo"}
+            title={"Tiago's photo"}
             artist={"Tiago"}
             link={"https://www.instagram.com/tiagoborgestattoos/"}
             socialMedia={"@tiagoborgestattoos"}
             booking={"https://www.instagram.com/direct/t/108115133917761"}
             bookingText={t("dm_appointments")}
+            
           />
 
           <ArtistCard
             img={daniela}
             alt={"Daniela's photo"}
+            title={"Daniela's photo"}
             artist={"Daniela"}
             link={"https://www.instagram.com/danielaspielberger/"}
             socialMedia={"@danielaspielberger"}
@@ -50,6 +53,7 @@ const Artists = () => {
           <ArtistCard
             img={basti}
             alt={"Basti's photo"}
+            title={"Basti's photo"}
             artist={"Basti"}
             link={"https://www.instagram.com/bastidegroot/"}
             socialMedia={"@bastidegroot"}
@@ -60,7 +64,8 @@ const Artists = () => {
           <ArtistCard
             img={SeppTattoo}
             alt={"Sepp's photo"}
-            artist={"Sep"}
+            title={"Sepp's photo"}
+            artist={"Sepp"}
             link={"https://www.instagram.com/the_sepp_tattoo/"}
             socialMedia={"@the_sepp_tattoo"}
             booking={"mailto:thesepptattoo@gmail.com"}
@@ -70,6 +75,7 @@ const Artists = () => {
           <ArtistCard
             img={gabitattoo}
             alt={"Gabi's photo"}
+            title={"Gabi's photo"}
             artist={"Gabriela Gaedke"}
             link={"https://www.instagram.com/thunderthestorm/"}
             socialMedia={"@thunderthestorm"}
@@ -79,6 +85,7 @@ const Artists = () => {
           <ArtistCard
             img={maikontattoo}
             alt={"Maikon's photo"}
+            title={"Maikon's photo"}
             artist={"Maikon Basei"}
             link={"https://www.instagram.com/mknxbasei/"}
             socialMedia={"@mknxbasei"}
@@ -89,6 +96,7 @@ const Artists = () => {
           <ArtistCard
             img={mariatattoo}
             alt={"Maria's photo"}
+            title={"Moona's photo"}
             artist={"Moona Autumn"}
             link={"https://www.instagram.com/moona.autumn/"}
             socialMedia={"@moona.autumn"}
@@ -98,6 +106,7 @@ const Artists = () => {
           <ArtistCard
             img={marczwg}
             alt={"Marc's photo"}
+            title={"Marc's photo"}
             artist={"Marc Zwg"}
             link={"https://www.instagram.com/marc.zwg/"}
             socialMedia={"@marc.zwg"}
@@ -113,21 +122,7 @@ const Artists = () => {
   );
 };
 
-{
-  /* card template */
-  {
-    /* <ArtistCard
-          img={}
-          alt={}
-          artist={}
-          link={}
-          socialMedia={}
-          booking={}
-          bookingText={}
-          />  */
-  }
-}
-{
-}
+
+
 
 export default Artists;

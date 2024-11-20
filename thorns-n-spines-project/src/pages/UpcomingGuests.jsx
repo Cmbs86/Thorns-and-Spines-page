@@ -30,7 +30,8 @@ const UpcomingGuests = () => {
         <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
           <ArtistCard
             img={sausageMan}
-            alt={"Tiago's photo"}
+            alt={"Sausage man's photo"}
+            title={"Sausage man's photo"}
             artist={"Sausage Man"}
             link={"https://www.instagram.com/tiagoborgestattoos/"}
             socialMedia={"@sausageman"}
@@ -41,6 +42,7 @@ const UpcomingGuests = () => {
           <ArtistCard
             img={daniela}
             alt={"Daniela's photo"}
+            title={"Daniela's photo"}
             artist={"Daniela"}
             link={"https://www.instagram.com/danielaspielberger/"}
             socialMedia={"@danielaspielberger"}
@@ -51,6 +53,7 @@ const UpcomingGuests = () => {
           <ArtistCard
             img={basti}
             alt={"Basti's photo"}
+            title={"Basti's photo"}
             artist={"Basti"}
             link={"https://www.instagram.com/bastidegroot/"}
             socialMedia={"@bastidegroot"}
@@ -61,6 +64,7 @@ const UpcomingGuests = () => {
           <ArtistCard
             img={SeppTattoo}
             alt={"Sepp's photo"}
+            title={"Sepp's photo"}
             artist={"Sep"}
             link={"https://www.instagram.com/the_sepp_tattoo/"}
             socialMedia={"@the_sepp_tattoo"}
@@ -71,6 +75,7 @@ const UpcomingGuests = () => {
           <ArtistCard
             img={gabitattoo}
             alt={"Gabi's photo"}
+            title={"Gabi's photo"}
             artist={"Gabriela Gaedke"}
             link={"https://www.instagram.com/thunderthestorm/"}
             socialMedia={"@thunderthestorm"}
@@ -80,6 +85,7 @@ const UpcomingGuests = () => {
           <ArtistCard
             img={maikontattoo}
             alt={"Maikon's photo"}
+            title={"Maikon's photo"}
             artist={"Maikon Basei"}
             link={"https://www.instagram.com/mknxbasei/"}
             socialMedia={"@mknxbasei"}
@@ -90,6 +96,7 @@ const UpcomingGuests = () => {
           <ArtistCard
             img={mariatattoo}
             alt={"Maria's photo"}
+            title={"Moonas's photo"}
             artist={"Moona Autumn"}
             link={"https://www.instagram.com/moona.autumn/"}
             socialMedia={"@moona.autumn"}
@@ -99,6 +106,7 @@ const UpcomingGuests = () => {
           <ArtistCard
             img={marczwg}
             alt={"Marc's photo"}
+            title={"Marc's photo"}
             artist={"Marc Zwg"}
             link={"https://www.instagram.com/marc.zwg/"}
             socialMedia={"@marc.zwg"}

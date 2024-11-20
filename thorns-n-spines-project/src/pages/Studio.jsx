@@ -158,7 +158,7 @@ const Studio = () => {
           <div className="relative w-[95%] xl:w-[75%]  ">
             <button
               onClick={closeLightbox}
-              className="absolute right-2 text-tns-ash-gray text-sm md:text-xl lg:text-2xl font-bold"
+              className="absolute right-3 top-5 text-tns-ash-gray text-sm md:text-xl lg:text-2xl font-bold"
             >
               &times;
             </button>
