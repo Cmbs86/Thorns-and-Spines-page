@@ -1,6 +1,8 @@
+//hooks import
 import { useState, useEffect } from "react";
+//translation import
 import { useTranslation } from "react-i18next";
-
+// Images imports
 import thorns1 from "../assets/images/thorns_1.webp";
 import thorns2 from "../assets/images/thorns_2.webp";
 import thorns3 from "../assets/images/thorns_3.webp";
