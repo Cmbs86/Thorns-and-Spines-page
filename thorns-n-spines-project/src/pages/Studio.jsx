@@ -155,7 +155,7 @@ const Studio = () => {
       {/* Lightbox Modal */}
       {isOpen && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50 ">
-          <div className="relative w-[95%] xl:w-[75%]   ">
+          <div className="relative w-[95%] xl:w-[75%]  ">
             <button
               onClick={closeLightbox}
               className="absolute right-2 text-tns-ash-gray text-sm md:text-xl lg:text-2xl font-bold"
@@ -165,7 +165,7 @@ const Studio = () => {
             <img
               src={images[currentImageIndex].src}
               alt={images[currentImageIndex].alt}
-              className="w-full h-auto max-h-screen object-contain mx-auto "
+              className="w-full h-auto max-h-screen object-contain mx-auto pt-5 "
             />
             <div className="flex justify-between mt-4">
               <button
