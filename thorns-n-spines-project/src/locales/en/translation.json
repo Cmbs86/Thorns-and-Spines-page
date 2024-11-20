@@ -18,5 +18,8 @@
   "first_name": "First Name",
   "last_name": "Last Name",
   "message": "Message",
-  "send": "Send"
+  "send": "Send",
+  "sending": "Sending",
+  "sent": "Sent!",
+  "contact_us_message": "For tattoo appointments and specific inquiries, please reach out to our artists directly via the links on our Artists or Guest pages of this website. Use this contact form for general questions or inquiries, and we’ll get back to you as soon as possible"
 }

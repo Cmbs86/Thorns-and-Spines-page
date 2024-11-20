@@ -7,8 +7,9 @@ const NavDesktop = () => {
       {routes.map((route) => {
         const { Icon, href, title } = route;
         return (
-          <li>
+          <li key={title}>
             <a
+              
               href={href}
               className=" items-center gap-1 text-tns-ebony hover:text-tns-ash-gray/90  transition-all text-3xl font-bold"
             >

@@ -1,8 +1,13 @@
+//hooks
 import { useClickAway } from "react-use";
 import { useEffect, useRef } from "react";
 import { useState } from "react";
+
+//animation and hamburger menu imports
 import { AnimatePresence, motion } from "framer-motion";
 import { Squash as Hamburger } from "hamburger-react";
+
+//Routes import
 import { useRoutes } from "../routes";
 
 const NavMobile = () => {
@@ -11,16 +16,16 @@ const NavMobile = () => {
   const routes = useRoutes();
 
   useEffect(() => {
-    if(isOpen){
-      document.body.style.overflow= "hidden";
-    } else{
-      document.body.style.overflow= "auto"
+    if (isOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
     }
 
     return () => {
-      document.body.style.overflow = "auto"
-    }
-  }, [isOpen])
+      document.body.style.overflow = "auto";
+    };
+  }, [isOpen]);
 
   useClickAway(ref, () => setOpen(false));
 

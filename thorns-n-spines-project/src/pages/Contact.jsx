@@ -1,8 +1,12 @@
-import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
+//layout import
 import ContentLayout from "../layouts/ContentLayout.jsx";
-import { useTranslation } from "react-i18next";
-import useMediaQuery from "../hooks/useMediaQuery.js";
+//separator component and contact form component import
+import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
 import ContactForm from "../components/ContactForm.jsx";
+//translation import
+import { useTranslation } from "react-i18next";
+//hook import
+import useMediaQuery from "../hooks/useMediaQuery.js";
 
 const Contact = () => {
   const { t } = useTranslation();
@@ -31,7 +35,7 @@ const Contact = () => {
                 height="100%"
                 allowFullScreen
                 loading="lazy"
-               referrerPolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             {/* Address info container */}
@@ -67,18 +71,12 @@ const Contact = () => {
               {/* create little text this section */}
               <div className="">
                 <p className="lg:text-xl py-2 pl-1 text-center lg:text-start font-sans font-bold">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Possimus voluptatum commodi doloribus consequatur est quis,
-                  esse consequuntur suscipit voluptas adipisci placeat similique
-                  nam quaerat libero quod omnis tempora quia facilis provident
-                  nesciunt dolorem perferendis quae delectus. Nihil soluta,
-                  iusto pariatur voluptas ex animi recusandae aliquam. Rerum
-                  quos pariatur expedita cum?
+                  {t("contact_us_message")}
                 </p>
               </div>
             </div>
             <div className="max-w-[600px]flex flex-col flex-wrap font-sans text-tns-ebony-dark font-bold">
-             <ContactForm />
+              <ContactForm />
             </div>
           </div>
           <AnimatedSeparator />
@@ -87,64 +85,5 @@ const Contact = () => {
     </>
   );
 };
-
-// {/* <form className="md:w-[600px]">
-// {/* Name Field */}
-// <div className="">
-//   <label className="block text-tns-ebony-dark text-lg  font-medium mb-2">
-//     Name{" "}
-//   </label>
-//   <div className="flex space-x-4">
-//     <input
-//       type="text"
-//       placeholder={t("first_name")}
-//       required
-//       className="w-full p-3 bg-tns-mint-cream border border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony"
-//     />
-//     <input
-//       type="text"
-//       placeholder={t("last_name")}
-//       required
-//       className="w-full p-3  bg-tns-mint-cream  border border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony"
-//     />
-//   </div>
-// </div>
-
-// {/* Email Field */}
-// <div className="mb-6">
-//   <label className="block text-tns-ebony-dark text-lg  font-medium mt-1 mb-2">
-//     Email{" "}
-//   </label>
-//   <input
-//     type="email"
-//     placeholder="Email"
-//     required
-//     className="w-full p-3  bg-tns-mint-cream  border border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony"
-//   />
-// </div>
-
-// {/* Message Field */}
-// <div className="mb-6">
-//   <label className="block text-tns-ebony-dark text-lg font-medium mb-2">
-//     Message{" "}
-//   </label>
-//   <textarea
-//     placeholder={t("message")}
-//     required
-//     rows="5"
-//     className="w-full p-3 border bg-tns-mint-cream border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony resize-none"
-//   ></textarea>
-// </div>
-
-// {/* Send Button */}
-// <div className="flex justify-center">
-//   <button
-//     type="submit"
-//     className="px-6 py-3 text-tns-ebony-dark border-2 border-tns-ebony  font-semibold hover:bg-tns-ebony hover:text-tns-mint-cream transition-colors"
-//   >
-//     {t("send")}
-//   </button>
-// </div>
-// </form> */}
 
 export default Contact;

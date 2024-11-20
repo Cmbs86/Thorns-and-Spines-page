@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
 const AnimatedSeparator = () => {
   const [isInView, setIsInView] = useState(false);
