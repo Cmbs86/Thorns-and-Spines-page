@@ -16,8 +16,8 @@ A static website for the Thorns and Spines Tattoo Shop, showcasing resident arti
 
 ## Features
 
-- **Resident Artists**: Dedicated section showcasing profiles of resident tattoo artists.
-- **Guest Artists**: Details and booking information for upcoming guest artists.
+- **Resident Artists**: Dedicated section showcasing profiles of resident tattoo artists, with links to their Instagram profiles and booking options based on each artist's preference.
+- **Guest Artists**: Details and booking information for upcoming guest artists, including links to their Instagram profiles and preferred booking methods.
 - **Interactive Design**: Smooth animations using Framer Motion.
 - **Mobile-Friendly and Interactive Navigation**: Fully responsive design with TailwindCSS. Includes a `hamburger-react` menu for mobile navigation.
 - **Localization**: Supports English and German translations using i18next.
