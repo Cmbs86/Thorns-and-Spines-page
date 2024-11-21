@@ -77,7 +77,7 @@ Thorns-and-Spines-page
 
 ## About the Project
 
-The **Thorns and Spines Tattoo Shop** website was designed and developed by **[Carlos Brito de Sousa]** as a personal project. I handled everything from conceptualizing the user interface to coding the React components, customizing TailwindCSS, and integrating animations with Framer Motion. This project was built to showcase the tattoo shop's offerings and provide an engaging online experience for potential clients.
+The **Thorns and Spines Tattoo Shop** website was designed and developed by **[Carlos Brito de Sousa]** as a client project. I handled everything from conceptualizing the user interface to coding the React components, customizing TailwindCSS, and integrating animations with Framer Motion. This project was built to showcase the tattoo shop's offerings and provide an engaging online experience for potential clients.
 
 ## Contributing
 
