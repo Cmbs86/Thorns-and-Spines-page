@@ -1,2 +1,1 @@
-## THORNS AND SPINES
-
+# Thorns & Spines Tattoo Page
