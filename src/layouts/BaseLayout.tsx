@@ -1,7 +1,10 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 
-const BaseLayout = ({ children }) => {
+type BaseLayoutProps = {
+  children: React.ReactNode;
+}
+const BaseLayout = ({ children }: BaseLayoutProps) => {
   return (<>
     <div className="min-h-screen">
       <Header />

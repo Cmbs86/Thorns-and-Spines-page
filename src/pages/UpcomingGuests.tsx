@@ -1,10 +1,10 @@
 //laytout import
-import ContentLayout from "../layouts/ContentLayout.jsx";
+import ContentLayout from "../layouts/ContentLayout.js";
 //translation import
 import { useTranslation } from "react-i18next";
 //components import
-import ArtistCard from "../components/ArtistCard.jsx";
-import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
+import ArtistCard from "../components/ArtistCard.tsx";
+import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
 import daniela from "../assets/images/daniela.webp";
 import basti from "../assets/images/basti.webp";
@@ -15,8 +15,15 @@ import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
 import sausageMan from "../assets/images/sausageman.webp";
 
+type TranslationKeys =
+  | "guest_artists"
+  | "booking_closed"
+  | "dm_appointments"
+  | "email_appointments"
+  | "booking_whatsapp";
+
 const UpcomingGuests = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation<TranslationKeys>();
   return (
     <>
       <ContentLayout>
@@ -112,7 +119,7 @@ const UpcomingGuests = () => {
               artist={"Marc Zwg"}
               link={"https://www.instagram.com/marc.zwg/"}
               socialMedia={"@marc.zwg"}
-              boooking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
+              booking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
               bookingText={t("email_appointments")}
             />
           </div>

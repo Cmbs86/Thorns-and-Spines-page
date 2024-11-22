@@ -2,11 +2,19 @@ import emailjs from "@emailjs/browser";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 
+type TranslationKeys =
+  | "first_name"
+  | "last_name"
+  | "message"
+  | "send"
+  | "sending"
+  | "sent";
+
 const ContactForm = () => {
-  const { t } = useTranslation();
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSent, setIsSent] = useState(false);
-  const sendEmail = (e) => {
+  const { t } = useTranslation<TranslationKeys>();
+  const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
+  const [isSent, setIsSent] = useState<boolean | null>(false);
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.persist();
     e.preventDefault();
     setIsSubmitting(true);
@@ -14,12 +22,12 @@ const ContactForm = () => {
       .sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
-        e.target,
-        import.meta.env.VITE_PUBLIC_KEY,
-        console.log(import.meta.env.VITE_SERVICE_ID)
+        e.target as HTMLFormElement,
+        import.meta.env.VITE_PUBLIC_KEY
+        // console.log(import.meta.env.VITE_SERVICE_ID)
       )
       .then(
-        (result) => {
+        () => {
           setIsSent(true);
           setIsSubmitting(false);
           setTimeout(() => {
@@ -33,7 +41,7 @@ const ContactForm = () => {
       );
 
     // Clears the form after sending the email
-    e.target.reset();
+    (e.target as HTMLFormElement).reset();
   };
   return (
     <form className="md:w-[600px]" onSubmit={sendEmail}>
@@ -79,7 +87,7 @@ const ContactForm = () => {
           name="message"
           placeholder={t("message")}
           required
-          rows="5"
+          rows={5}
           className="w-full p-3 border bg-tns-mint-cream border-tns-ash-gray-light  focus:outline-none focus:ring-2 focus:ring-tns-ebony resize-none"
         />
       </div>

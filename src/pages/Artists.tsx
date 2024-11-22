@@ -1,8 +1,8 @@
 //wrapper layout import
-import ContentLayout from "../layouts/ContentLayout.jsx";
+import ContentLayout from "../layouts/ContentLayout.js";
 //component import
-import ArtistCard from "../components/ArtistCard.jsx";
-import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
+import ArtistCard from "../components/ArtistCard.tsx";
+import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 //translation import
 import { useTranslation } from "react-i18next";
 // Images imports
@@ -15,8 +15,16 @@ import maikontattoo from "../assets/images/maikon.webp";
 import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
 
+type TranslationKeys =
+  | "resident_artists"
+  | "dm_appointments"
+  | "booking_closed"
+  | "email_appointments"
+  | "booking_whatsapp"
+  | "booking_dm_or_email";
+
 const Artists = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation<TranslationKeys>();
 
   return (
     <>
@@ -113,7 +121,7 @@ const Artists = () => {
               artist={"Marc Zwg"}
               link={"https://www.instagram.com/marc.zwg/"}
               socialMedia={"@marc.zwg"}
-              boooking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
+              booking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
               bookingText={t("booking_dm_or_email")}
             />
           </div>
