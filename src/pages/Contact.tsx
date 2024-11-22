@@ -8,8 +8,14 @@ import { useTranslation } from "react-i18next";
 //hook import
 import useMediaQuery from "../hooks/useMediaQuery.ts";
 
+type TranslationKeys =
+  | "contact"
+  | "our_address"
+  | "contact_us"
+  | "contact_us_message";
+
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation<TranslationKeys>();
 
   const isBelowLg = useMediaQuery("(max-width:1024px)");
 

@@ -15,10 +15,16 @@ import maikontattoo from "../assets/images/maikon.webp";
 import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
 
-
+type TranslationKeys =
+  | "resident_artists"
+  | "dm_appointments"
+  | "booking_closed"
+  | "email_appointments"
+  | "booking_whatsapp"
+  | "booking_dm_or_email";
 
 const Artists = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation<TranslationKeys>();
 
   return (
     <>

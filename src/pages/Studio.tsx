@@ -14,7 +14,14 @@ import thorns8 from "../assets/images/thorns_8.webp";
 import thorns9 from "../assets/images/thorns_9.webp";
 import thorns10 from "../assets/images/thorns_10.webp";
 
-const images = [
+interface Image {
+  src: string;
+  alt: string;
+  colSpan: string;
+  rowSpan: string;
+}
+
+const images: Image[] = [
   {
     src: thorns1,
     alt: "Studio Image 1",
@@ -77,17 +84,19 @@ const images = [
   },
 ];
 
-const Studio = () => {
-  const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+type TranslationKeys = "the_studio";
 
-  const openLightbox = (index) => {
+const Studio = () => {
+  const { t } = useTranslation<TranslationKeys>();
+  const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [currentImageIndex, setCurrentImageIndex] = useState<number>(0);
+
+  const openLightbox = (index: number) => {
     setCurrentImageIndex(index);
     setIsOpen(true);
   };
 
-  const closeLightbox = () => {
+  const closeLightbox = (): void => {
     setIsOpen(false);
   };
 
@@ -104,7 +113,7 @@ const Studio = () => {
   useEffect(() => {
     if (!isOpen) return;
 
-    const handleKeyDown = (e) => {
+    const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "ArrowLeft") {
         showPrevImage();
       } else if (e.key === "ArrowRight") {

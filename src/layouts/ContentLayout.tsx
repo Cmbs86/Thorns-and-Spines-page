@@ -1,6 +1,8 @@
-import React from 'react'
+type ContentLayoutProps = {
+  children: React.ReactNode;
+}
 
-const ContentLayout = ({children}) => {
+const ContentLayout = ({children}: ContentLayoutProps) => {
   return (
     <div className='max-w-[1800px] mx-auto px-4'>{children}</div>
   )

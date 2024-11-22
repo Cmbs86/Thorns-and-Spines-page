@@ -15,8 +15,15 @@ import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
 import sausageMan from "../assets/images/sausageman.webp";
 
+type TranslationKeys =
+  | "guest_artists"
+  | "booking_closed"
+  | "dm_appointments"
+  | "email_appointments"
+  | "booking_whatsapp";
+
 const UpcomingGuests = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation<TranslationKeys>();
   return (
     <>
       <ContentLayout>
