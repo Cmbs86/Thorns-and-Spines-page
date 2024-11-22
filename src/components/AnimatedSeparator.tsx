@@ -2,12 +2,12 @@ import { motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
 const AnimatedSeparator = () => {
-  const [isInView, setIsInView] = useState(false);
-  const underlineRef = useRef(null);
+  const [isInView, setIsInView] = useState<boolean>(false);
+  const underlineRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
-      ([entry]) => {
+      ([entry]: IntersectionObserverEntry[]) => {
         setIsInView(entry.isIntersecting);
       },
       { threshold: 0.8 } 

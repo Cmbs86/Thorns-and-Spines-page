@@ -5,7 +5,7 @@ const NavDesktop = () => {
   return (
     <ul className="hidden md:flex md:items-center gap-5 text-sm">
       {routes.map((route) => {
-        const { Icon, href, title } = route;
+        const { href, title } = route;
         return (
           <li key={title}>
             <a

@@ -1,12 +1,12 @@
 //layout import
-import ContentLayout from "../layouts/ContentLayout.jsx";
+import ContentLayout from "../layouts/ContentLayout.js";
 //separator component and contact form component import
-import AnimatedSeparator from "../components/AnimatedSeparator.jsx";
-import ContactForm from "../components/ContactForm.jsx";
+import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
+import ContactForm from "../components/ContactForm.tsx";
 //translation import
 import { useTranslation } from "react-i18next";
 //hook import
-import useMediaQuery from "../hooks/useMediaQuery.js";
+import useMediaQuery from "../hooks/useMediaQuery.ts";
 
 const Contact = () => {
   const { t } = useTranslation();

@@ -1,15 +1,15 @@
 import { useState, useEffect } from "react";
 
-const useMediaQuery = (query) => {
+const useMediaQuery = (query: string): boolean => {
     //Create a state to track whether the query matches.
-    const [matches, setMatches] = useState(false)
+    const [matches, setMatches] = useState<boolean>(false)
 
     useEffect(() => {
       // Create a media query list using "window.matchMedia"
       const mediaQueryList = window.matchMedia(query);
       
       // Define a listener to update the state when the media query changes.
-      const listener = (event) => setMatches(event.matches);
+      const listener = (event: MediaQueryListEvent) => setMatches(event.matches);
 
       //Set the initial state and add the listener
       setMatches(mediaQueryList.matches);

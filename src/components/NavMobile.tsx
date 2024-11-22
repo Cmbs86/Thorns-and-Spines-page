@@ -10,9 +10,10 @@ import { Squash as Hamburger } from "hamburger-react";
 //Routes import
 import { useRoutes } from "../routes";
 
+
 const NavMobile = () => {
-  const [isOpen, setOpen] = useState(false);
-  const ref = useRef(null);
+  const [isOpen, setOpen] = useState<boolean>(false);
+  const ref = useRef<HTMLDivElement>(null);
   const routes = useRoutes();
 
   useEffect(() => {
@@ -31,7 +32,7 @@ const NavMobile = () => {
 
   return (
     <div ref={ref} className="md:hidden w-full mt-5 flex ">
-      <Hamburger toggled={isOpen} size={30} toggle={setOpen} />
+      <Hamburger toggled={isOpen} size={30} toggle={setOpen} aria-expanded={isOpen ? "true" : "false"} aria-label="Toggle navigation"  />
 
       <AnimatePresence>
         {isOpen && (
@@ -44,7 +45,7 @@ const NavMobile = () => {
           >
             <ul className="w-[91%] flex flex-col m-0 p-0 mt-28  ">
               {routes.map((route, idx) => {
-                const { Icon } = route;
+                // const { Icon } = route;
 
                 return (
                   <motion.li

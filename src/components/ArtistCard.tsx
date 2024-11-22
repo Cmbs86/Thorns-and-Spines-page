@@ -1,6 +1,15 @@
+interface ArtistProps {
+  img: string;
+  alt: string;
+  title: string;
+  artist: string;
+  link: string;
+  socialMedia: string;
+  booking: string;
+  bookingText: string;
+}
 
-
-const ArtistCard = ({
+const ArtistCard: React.FC<ArtistProps> = ({
   img,
   alt,
   title,
