@@ -6,14 +6,18 @@ import { useTranslation } from "react-i18next";
 import ArtistCard from "../components/ArtistCard.tsx";
 import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
-import daniela from "../assets/images/daniela.webp";
-import basti from "../assets/images/basti.webp";
+
+
 import SeppTattoo from "../assets/images/sepp.webp";
 import gabitattoo from "../assets/images/gabi.webp";
 import maikontattoo from "../assets/images/maikon.webp";
 import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
-import sausageMan from "../assets/images/sausageman.webp";
+import NIsaac from "../assets/images/nisaacttt.webp";
+import theAphotic from "../assets/images/the_aphotic.webp";
+import Sofa from "../assets/images/sofa_oblina.webp";
+import luhtsuki from "../assets/images/luhtsuki.webp";
+
 
 type TranslationKeys =
   | "guest_artists"
@@ -38,50 +42,54 @@ const UpcomingGuests = () => {
           {/* Wrapper for cards */}
           <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
             <ArtistCard
-              img={sausageMan}
-              alt={"Sausage man's photo"}
-              title={"Sausage man's photo"}
-              artist={"Sausage Man"}
-              link={"https://www.instagram.com/tiagoborgestattoos/"}
-              socialMedia={"@sausageman"}
-              booking={"https://www.instagram.com/direct/t/108115133917761"}
-              bookingText={"DM for more sexy pics"}
-            />
-
-            <ArtistCard
-              img={daniela}
-              alt={"Daniela's photo"}
-              title={"Daniela's photo"}
-              artist={"Daniela"}
-              link={"https://www.instagram.com/danielaspielberger/"}
-              socialMedia={"@danielaspielberger"}
-              booking={"https://www.instagram.com/direct/t/113920086666340"}
-              bookingText={t("booking_closed")}
-            />
-
-            <ArtistCard
-              img={basti}
-              alt={"Basti's photo"}
-              title={"Basti's photo"}
-              artist={"Basti"}
-              link={"https://www.instagram.com/bastidegroot/"}
-              socialMedia={"@bastidegroot"}
-              booking={"https://www.instagram.com/direct/t/108656357198639"}
+              img={NIsaac}
+              alt={"n.isaac's photo"}
+              title={"n.isaac's photo"}
+              artist={"Isaac"}
+              link={"https://www.instagram.com/n.isaac.ttt/"}
+              socialMedia={"@n.isaac.ttt"}
+              booking={"https://www.instagram.com/direct/t/100551108013622"}
               bookingText={t("dm_appointments")}
+              dates="02.12.2024 - 07.12.2024"
             />
 
             <ArtistCard
-              img={SeppTattoo}
-              alt={"Sepp's photo"}
-              title={"Sepp's photo"}
-              artist={"Sep"}
-              link={"https://www.instagram.com/the_sepp_tattoo/"}
-              socialMedia={"@the_sepp_tattoo"}
-              booking={"mailto:thesepptattoo@gmail.com"}
+              img={theAphotic}
+              alt={"the aphotic's photo"}
+              title={"the aphotic's photo"}
+              artist={"The Aphotic"}
+              link={"https://www.instagram.com/the_aphotic/"}
+              socialMedia={"@the_aphotic"}
+              booking={"https://www.instagram.com/direct/t/108136683920422"}
+              bookingText={t("dm_appointments")}
+              dates="05.12.2024 - 7.12.2024"
+            />
+
+            <ArtistCard
+              img={Sofa}
+              alt={"Sofa's photo"}
+              title={"Sofa's photo"}
+              artist={"Sofa"}
+              link={"https://www.instagram.com/sofa_oblina/"}
+              socialMedia={"@sofa_oblina"}
+              booking={"mailto:sofa.oblina@gmx.de"}
               bookingText={t("email_appointments")}
+              dates="09.12.2024 - 11.12.2024"
             />
 
             <ArtistCard
+              img={luhtsuki}
+              alt={"luhtsuki's photo"}
+              title={"luhtsuki's photo"}
+              artist={"Luh Tsuki"}
+              link={"https://www.instagram.com/luh.tsuki/"}
+              socialMedia={"@luh.tsuki"}
+              booking={"mailto:luh.tsuki@gmail.com"}
+              bookingText={t("email_appointments")}
+              dates="07.01.2025 - 10.01.2025"
+            />
+
+            {/* <ArtistCard
               img={gabitattoo}
               alt={"Gabi's photo"}
               title={"Gabi's photo"}
@@ -90,8 +98,8 @@ const UpcomingGuests = () => {
               socialMedia={"@thunderthestorm"}
               booking={"https://www.instagram.com/direct/t/104702077804895"}
               bookingText={"DM for appointments"}
-            />
-            <ArtistCard
+            /> */}
+            {/* <ArtistCard
               img={maikontattoo}
               alt={"Maikon's photo"}
               title={"Maikon's photo"}
@@ -100,9 +108,9 @@ const UpcomingGuests = () => {
               socialMedia={"@mknxbasei"}
               booking={"mailto:mknxappointments@gmail.com"}
               bookingText={t("email_appointments")}
-            />
+            /> */}
 
-            <ArtistCard
+            {/* <ArtistCard
               img={mariatattoo}
               alt={"Maria's photo"}
               title={"Moonas's photo"}
@@ -111,8 +119,8 @@ const UpcomingGuests = () => {
               socialMedia={"@moona.autumn"}
               booking={"https://wa.me/4916091701753"}
               bookingText={t("booking_whatsapp")}
-            />
-            <ArtistCard
+            /> */}
+            {/* <ArtistCard
               img={marczwg}
               alt={"Marc's photo"}
               title={"Marc's photo"}
@@ -121,7 +129,7 @@ const UpcomingGuests = () => {
               socialMedia={"@marc.zwg"}
               booking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
               bookingText={t("email_appointments")}
-            />
+            /> */}
           </div>
           <AnimatedSeparator />
         </main>

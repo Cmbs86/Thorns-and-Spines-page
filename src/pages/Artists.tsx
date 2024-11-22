@@ -48,6 +48,7 @@ const Artists = () => {
               socialMedia={"@tiagoborgestattoos"}
               booking={"https://www.instagram.com/direct/t/108115133917761"}
               bookingText={t("dm_appointments")}
+              dates=""
             />
 
             <ArtistCard
@@ -59,6 +60,7 @@ const Artists = () => {
               socialMedia={"@danielaspielberger"}
               booking={"https://www.instagram.com/direct/t/113920086666340"}
               bookingText={t("booking_closed")}
+              dates=""
             />
 
             <ArtistCard
@@ -70,6 +72,7 @@ const Artists = () => {
               socialMedia={"@bastidegroot"}
               booking={"https://www.instagram.com/direct/t/108656357198639"}
               bookingText={t("dm_appointments")}
+              dates=""
             />
 
             <ArtistCard
@@ -81,6 +84,7 @@ const Artists = () => {
               socialMedia={"@the_sepp_tattoo"}
               booking={"mailto:thesepptattoo@gmail.com"}
               bookingText={t("email_appointments")}
+              dates=""
             />
 
             <ArtistCard
@@ -92,6 +96,7 @@ const Artists = () => {
               socialMedia={"@thunderthestorm"}
               booking={"https://www.instagram.com/direct/t/104702077804895"}
               bookingText={t("dm_appointments")}
+              dates=""
             />
             <ArtistCard
               img={maikontattoo}
@@ -102,6 +107,7 @@ const Artists = () => {
               socialMedia={"@mknxbasei"}
               booking={"mailto:mknxappointments@gmail.com"}
               bookingText={t("email_appointments")}
+              dates=""
             />
 
             <ArtistCard
@@ -113,6 +119,7 @@ const Artists = () => {
               socialMedia={"@moona.autumn"}
               booking={"https://wa.me/4916091701753"}
               bookingText={t("booking_whatsapp")}
+              dates=""
             />
             <ArtistCard
               img={marczwg}
@@ -123,6 +130,7 @@ const Artists = () => {
               socialMedia={"@marc.zwg"}
               booking={"mailto:zweiundzwanzig.tattoo@gmail.com"}
               bookingText={t("booking_dm_or_email")}
+              dates=""
             />
           </div>
 

@@ -7,6 +7,7 @@ interface ArtistProps {
   socialMedia: string;
   booking: string;
   bookingText: string;
+  dates: string;
 }
 
 const ArtistCard: React.FC<ArtistProps> = ({
@@ -18,6 +19,7 @@ const ArtistCard: React.FC<ArtistProps> = ({
   link,
   booking,
   bookingText,
+  dates
 }) => {
   return (
     <>
@@ -50,6 +52,7 @@ const ArtistCard: React.FC<ArtistProps> = ({
             <span className="underline-animation-right">{bookingText}</span>
           </a>
         </div>
+        <p className="mt-1 text-lg sm:text-xl  lg:text-2xl text-tns-ebony">{dates}</p>
       </div>
     </>
   );
