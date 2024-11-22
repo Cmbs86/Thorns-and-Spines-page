@@ -47,6 +47,7 @@ These design choices were implemented using TailwindCSS, which allowed for flexi
 
 ## Folder Structure
 
+```plaintext
 Thorns-and-Spines-page
 ├── node_modules/          # Auto-generated folder for project dependencies
 ├── public/                # Public assets available to the browser
@@ -74,6 +75,7 @@ Thorns-and-Spines-page
 ├── README.md              # Project documentation
 ├── tailwind.config.js     # TailwindCSS configuration
 └── vite.config.js         # Vite configuration file
+```
 
 ## About the Project
 
