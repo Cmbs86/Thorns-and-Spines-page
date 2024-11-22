@@ -6,13 +6,6 @@ import { useTranslation } from "react-i18next";
 import ArtistCard from "../components/ArtistCard.tsx";
 import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
-
-
-import SeppTattoo from "../assets/images/sepp.webp";
-import gabitattoo from "../assets/images/gabi.webp";
-import maikontattoo from "../assets/images/maikon.webp";
-import mariatattoo from "../assets/images/maria.webp";
-import marczwg from "../assets/images/marc.webp";
 import NIsaac from "../assets/images/nisaacttt.webp";
 import theAphotic from "../assets/images/the_aphotic.webp";
 import Sofa from "../assets/images/sofa_oblina.webp";

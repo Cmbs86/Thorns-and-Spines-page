@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useTranslation<TranslationKeys>();
 
   return (
-    <div className="relative w-full h-[80vh] z-0 overflow-hidden ">
+    <div className="relative w-full h-[calc(100vh-20.4rem)] z-0 overflow-hidden ">
       {/* Background image container */}
       <motion.div
         className="absolute w-full h-full"
