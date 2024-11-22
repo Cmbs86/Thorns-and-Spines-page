@@ -26,6 +26,7 @@ A static website for the Thorns and Spines Tattoo Shop, showcasing resident arti
 ## Tech Stack
 
 - **Frontend**: React, TailwindCSS
+- **Languages**: TypeScript
 - **Animations**: Framer Motion
 - **Localization**: i18next
 - **Bundler**: Vite
@@ -42,7 +43,7 @@ The design of the website follows the official color scheme and branding of the 
     - `TNS Ebony`: #606954
     - `TNS Ebony Dark`: #485040
 - **Typography**: The font used is **Quicksand**, a modern and legible typeface that aligns with the tattoo shop's bold and artistic style. The font is applied across the website for a consistent reading experience.
-  
+
 These design choices were implemented using TailwindCSS, which allowed for flexible customization and ensured consistency across the entire website.
 
 ## Folder Structure
@@ -59,11 +60,12 @@ Thorns-and-Spines-page
 │   ├── locales/           # Translation files for i18next
 │   ├── pages/             # Individual page components
 │   ├── utils/             # Utility functions and helpers
-│   ├── App.css            # Global styles for the application
-│   ├── App.jsx            # Main App component
+│   ├── App.tsx            # Main App component
+│   ├── custom.d.ts        # Image module declaration
 │   ├── index.css          # TailwindCSS configuration and global styles
-│   ├── main.jsx           # Application entry point
-│   ├── routes.js          # Centralized route configuration
+│   ├── main.tsx           # Application entry point
+│   ├── routes.ts          # Centralized route configuration
+│   ├── vite-env.t.ts      # TypeScript declarations for Vite environment variables
 ├── .env                   # Environment variables file
 ├── .gitignore             # Git configuration to exclude files/folders
 ├── eslint.config.js       # ESLint configuration for linting
@@ -74,12 +76,13 @@ Thorns-and-Spines-page
 ├── postcss.config.js      # PostCSS configuration
 ├── README.md              # Project documentation
 ├── tailwind.config.js     # TailwindCSS configuration
+├── tsconfig.json          # TypeScript configuration
 └── vite.config.js         # Vite configuration file
 ```
 
 ## About the Project
 
-The **Thorns and Spines Tattoo Shop** website was designed and developed by **[Carlos Brito de Sousa]** as a client project. I handled everything from conceptualizing the user interface to coding the React components, customizing TailwindCSS, and integrating animations with Framer Motion. This project was built to showcase the tattoo shop's offerings and provide an engaging online experience for potential clients.
+The **Thorns and Spines Tattoo Shop** website was designed and developed by **[Carlos Brito de Sousa]** as a client project. Initially developed with JavaScript, the project was later refactored to TypeScript to enhance type safety and maintainability. I handled everything from conceptualizing the user interface to coding the React components, customizing TailwindCSS, integrating animations with Framer Motion, and working with TypeScript for better scalability and error prevention. This project was built to showcase the tattoo shop's offerings and provide an engaging online experience for potential clients.
 
 ## Contributing
 
