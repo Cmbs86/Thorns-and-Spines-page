@@ -1,12 +1,18 @@
 import NavDesktop from "./NavDesktop";
 import NavMobile from "./NavMobile";
+// import thorns_logo_clear from "../assets/images/thorns_logo_clear.webp";
 
 const Header = () => {
   return (
     <header className=" bg-tns-ash-gray-light  text-tns-ebony  border-x-tns-mint-cream font-sans ">
-      <nav className="w-full flex items-center justify-start py-3 md:py-8">
+      <nav className="w-full flex items-center justify-between py-3 md:py-8">
         <NavMobile />
         <NavDesktop />
+        {/* <div className="">
+          <div >
+            <img className="mr-4  w-[50px] h-[50px]" src={thorns_logo_clear} alt="" />
+          </div>
+        </div> */}
       </nav>
     </header>
   );

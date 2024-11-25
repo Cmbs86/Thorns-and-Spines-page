@@ -39,5 +39,10 @@ export const useRoutes = ():Route[] => {
       href: "/upcoming-guests",
       // Icon: PiChatCircleBold,
     },
+    {
+      title: t('store'),
+      href: "/store",
+      // Icon: PiChatCircleBold,
+    },
   ];
 };

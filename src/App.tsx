@@ -5,6 +5,7 @@ import Artists from "./pages/Artists.tsx";
 import Contact from "./pages/Contact.tsx";
 import Studio from "./pages/Studio.tsx";
 import UpcomingGuests from "./pages/UpcomingGuests.tsx";
+import Store from "./pages/Store.tsx";
 import NotFound from "./pages/NotFound.tsx";
 import BaseLayout from "./layouts/BaseLayout.tsx";
 
@@ -18,6 +19,7 @@ const App: React.FC = () => {
         <Route path="/artists" element={<Artists />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/upcoming-guests" element={<UpcomingGuests />} />
+        <Route path="/store" element={<Store/>} />
         <Route path="/*" element={<NotFound />} />
       </Routes>
       </BaseLayout>
