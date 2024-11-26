@@ -25,6 +25,7 @@ const AnimatedSeparator = () => {
 
   return (
     <>
+      <div className="flex justify-center w-full">
       <motion.div
         ref={underlineRef}
         className="w-[80%] h-[1px] bg-tns-ebony origin-center mt-10"
@@ -32,6 +33,7 @@ const AnimatedSeparator = () => {
         animate={{ scaleX: isInView ? 1 : 0 }}
         transition={{ duration: 1.2 }}
       />
+    </div>
     </>
   );
 };

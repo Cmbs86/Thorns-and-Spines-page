@@ -35,6 +35,7 @@ ul {
 ol {
   list-style: decimal;
   padding-left: 30px;
+  /* padding-right: 30px; */
 }
 
 img {
