@@ -11,7 +11,7 @@ const Store = () => {
   return (
     <>
      <ContentLayout>
-  <main className="min-h-screen w-full flex flex-col items-center justify-between">
+  <main className="w-full flex flex-col items-center justify-between">
     <div className="text-center mt-10">
       <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans">
         {t("store")}
