@@ -52,7 +52,7 @@ const ArtistCard: React.FC<ArtistProps> = ({
             <span className="underline-animation-right">{bookingText}</span>
           </a>
         </div>
-        <p className="mt-1 text-lg sm:text-xl  lg:text-2xl text-tns-ebony">{dates}</p>
+        <p className="mt-1 text-lg sm:text-xl font-semibold lg:text-2xl text-tns-ebony">{dates}</p>
       </div>
     </>
   );
