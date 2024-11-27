@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useTranslation<TranslationKeys>();
 
   return (
-    <div className="relative w-full h-[calc(100vh-20.4rem)] z-0 overflow-hidden ">
+    <div className="relative w-full h-[calc(100vh-20.2rem)] z-0 overflow-hidden ">
       {/* Background image container */}
       <motion.div
         className="absolute w-full h-full"
@@ -35,7 +35,7 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 4.8, delay: 0.7 }}
       >
-        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl  font-bold  text-tns-ash-gray-light font-sans">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold  text-tns-ash-gray-light font-sans">
           {t("welcome")}
         </h1>
       </motion.div>
