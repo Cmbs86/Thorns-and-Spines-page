@@ -27,7 +27,7 @@ const UpcomingGuests = () => {
         <main className="min-h-screen w-full  flex flex-col items-center justify-center">
           {/* Text section */}
           <div className="text-center my-10">
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans ">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-tns-ebony font-sans ">
               {t("guest_artists")}
             </h1>
           </div>

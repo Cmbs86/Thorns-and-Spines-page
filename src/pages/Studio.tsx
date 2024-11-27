@@ -143,7 +143,7 @@ const Studio = () => {
   return (
     <main className="flex flex-col min-h-screen">
       <div className="flex justify-center text-center my-10 md:mb-16 lg:mb-20">
-        <h1 className="text-3xl md:text-6xl font-bold text-tns-ebony font-sans">
+        <h1 className="text-3xl md:text-5xl font-bold text-tns-ebony font-sans">
           {t("the_studio")}
         </h1>
       </div>

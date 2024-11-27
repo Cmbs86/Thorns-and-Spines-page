@@ -12,8 +12,8 @@ const Store = () => {
     <>
      <ContentLayout>
   <main className="w-full flex flex-col items-center justify-between">
-    <div className="text-center mt-10">
-      <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans">
+    <div className="text-center my-10">
+      <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-tns-ebony font-sans">
         {t("store")}
       </h1>
     </div>
@@ -24,12 +24,12 @@ const Store = () => {
           src={thorns_round}
           alt="Thorns and Spines logo"
           title="Thorns and Spines logo"
-          className="rounded-full w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[480px] lg:h-[480px] xl:w-[520px] xl:h-[520px] object-cover mx-auto"
+          className="rounded-full w-[280px] h-[280px] sm:w-[400px] sm:h-[400px] md:w-[450px] md:h-[450px] lg:w-[480px] lg:h-[480px] xl:w-[500px] xl:h-[500px] object-cover mx-auto"
         />
       </div>
 
       <div className="2xl:p-8 flex justify-center">
-        <p className="sm:text-md md:text-lg lg:text-2xl xl:text-3xl text-center text-tns-ebony font-sans font-bold max-w-lg">
+        <p className="sm:text-md md:text-lg lg:text-2xl  text-center text-tns-ebony font-sans font-bold max-w-lg">
           {t("store_text")}
         </p>
       </div>

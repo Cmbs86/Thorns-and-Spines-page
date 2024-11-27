@@ -24,7 +24,7 @@ const Contact = () => {
       <ContentLayout>
         <main className="w-full flex flex-col items-center">
           <div className="text-center my-10 md:mb-16 lg:mb-24">
-            <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold text-tns-ebony font-sans  ">
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-tns-ebony font-sans  ">
               {t("contact")}
             </h1>
           </div>
@@ -48,7 +48,7 @@ const Contact = () => {
             <div className="flex flex-col flex-wrap font-sans text-tns-ebony font-bold">
               <section className="flex flex-col gap-y-10  justify-center items-center">
                 <div className="w-full">
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl text-center lg:text-start">
+                  <h3 className="text-3xl md:text-4xl lg:text-5xl  text-center lg:text-start">
                     {t("our_address")}
                   </h3>
                 </div>
