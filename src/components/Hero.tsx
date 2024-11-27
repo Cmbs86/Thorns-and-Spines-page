@@ -7,7 +7,7 @@ const Hero = () => {
   const { t } = useTranslation<TranslationKeys>();
 
   return (
-    <div className="relative w-full h-[calc(100vh-20.2rem)] z-0 overflow-hidden ">
+    <div className="relative w-full h-[calc(100vh-17.2rem)] z-0 overflow-hidden ">
       {/* Background image container */}
       <motion.div
         className="absolute w-full h-full"
@@ -33,7 +33,7 @@ const Hero = () => {
         className="relative flex justify-center text-center items-end pb-14  sm:pb-28 h-full"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 4.8, delay: 0.7 }}
+        transition={{ duration: 4.2, delay: 0.7 }}
       >
         <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl  font-bold  text-tns-ash-gray-light font-sans">
           {t("welcome")}
