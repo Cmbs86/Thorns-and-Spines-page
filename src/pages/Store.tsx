@@ -19,7 +19,7 @@ const Store = () => {
     </div>
 
     <div className="max-w-[1600px] mx-auto flex flex-col justify-center gap-y-10 items-center">
-      <div className="py-8 rounded-lg text-center">
+      <div className=" rounded-lg text-center">
         <img
           src={thorns_round}
           alt="Thorns and Spines logo"
