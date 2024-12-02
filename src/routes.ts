@@ -30,11 +30,6 @@ export const useRoutes = ():Route[] => {
       // Icon: IoPricetagsOutline,
     },
     {
-      title: t('contact'),
-      href: "/contact",
-      // Icon: PiChatCircleBold,
-    },
-    {
       title: t('guest_artists'),
       href: "/upcoming-guests",
       // Icon: PiChatCircleBold,
@@ -42,6 +37,11 @@ export const useRoutes = ():Route[] => {
     {
       title: t('store'),
       href: "/store",
+      // Icon: PiChatCircleBold,
+    },
+    {
+      title: t('contact'),
+      href: "/contact",
       // Icon: PiChatCircleBold,
     },
   ];

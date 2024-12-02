@@ -29,7 +29,7 @@ const Store = () => {
       </div>
 
       <div className="2xl:p-8 flex justify-center">
-        <p className="sm:text-md md:text-lg lg:text-2xl  text-center text-tns-ebony font-sans font-bold max-w-lg">
+        <p className="sm:text-base md:text-lg lg:text-xl  text-center text-tns-ebony font-sans font-bold max-w-lg">
           {t("store_text")}
         </p>
       </div>
@@ -38,7 +38,7 @@ const Store = () => {
         href="https://thornsandspines.bigcartel.com/"
         target="_blank"
         rel="noopener noreferrer"
-        className="text-center px-6 py-3 bg-tns-ebony text-tns-mint-cream font-medium sm:text-md md:text-lg lg:text-2xl shadow-md"
+        className="text-center px-6 py-3 bg-tns-ebony text-tns-mint-cream font-medium sm:text-base md:text-lg lg:text-xl shadow-md"
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
       >
@@ -46,8 +46,8 @@ const Store = () => {
       </motion.a>
     </div>
 
-    <AnimatedSeparator />
   </main>
+    <AnimatedSeparator />
 </ContentLayout>
 
     </>

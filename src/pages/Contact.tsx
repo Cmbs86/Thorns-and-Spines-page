@@ -53,7 +53,7 @@ const Contact = () => {
                   </h3>
                 </div>
                 {/* change mb-10 here for more if needed and check animated separator on media queries */}
-                <h1 className="mb-12 text-3xl md:text-4xl lg:text-5xl xl:text-6xl">
+                <h1 className="mb-12 text-3xl md:text-4xl lg:text-5xl ">
                   Dreilindenstraße 25,
                   <span className="block mt-1">04177</span>
                   <span className="block mt-1">Leipzig</span>
@@ -70,13 +70,13 @@ const Contact = () => {
           >
             <div className="flex flex-wrap  text-tns-ebony lg:w-[750px] lg:h-[500px]    ">
               <div className="w-full text-center">
-                <h1 className="text-3xl md:text-4xl lg:text-6xl text-center  font-sans font-bold mb-10 lg:mb-0 mt-5">
+                <h1 className="text-3xl md:text-4xl lg:text-5xl text-center  font-sans font-bold mb-10 lg:mb-0 mt-5">
                   {t("contact_us")}
                 </h1>
               </div>
               {/* create little text this section */}
               <div className="">
-                <p className="lg:text-xl py-2 pl-1 text-center lg:text-start font-sans font-bold">
+                <p className="sm:text-base md:text-lg lg:text-xl py-2 pl-1 text-center lg:text-start font-sans font-bold">
                   {t("contact_us_message")}
                 </p>
               </div>

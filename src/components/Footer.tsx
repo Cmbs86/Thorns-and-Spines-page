@@ -10,21 +10,21 @@ const Footer = () => {
       <div className=" font-sans text-xl flex flex-wrap w-full py-8 md:max-w-[1600px] gap-4 md:gap-0  mx-auto justify-center  h-full  text-tns-ebony">
         <div className=" flex flex-col flex-wrap w-1/2 gap-4  justify-center items-center  ">
           <div className="flex items-start">
-            <h3 className="text-xl md:text-2xl font-bold border-b-2 border-tns-ebony ">
+            <h3 className="text-base md:text-lg font-bold border-b-2 border-tns-ebony ">
               {t("location")}
             </h3>
           </div>
-          <div className="flex text-center  text-sm md:text-lg ">
+          <div className="flex text-center  text-xs md:text-sm ">
             <p>Dreilindenstraße 25, 04177 Leipzig</p>
           </div>
         </div>
         <div className=" flex flex-col w-1/2 flex-wrap gap-4  justify-center items-center  ">
           <div className="flex items-start">
-            <h3 className="text-xl md:text-2xl font-bold border-b-2 border-tns-ebony ">
+            <h3 className="text-base md:text-lg font-bold border-b-2 border-tns-ebony ">
               {t("contact")}
             </h3>
           </div>
-          <div className="flex text-center text-sm md:text-lg break-all ">
+          <div className="flex text-center text-xs md:text-sm break-all ">
             <p>contact@thornsandspines.de</p>
           </div>
         </div>

@@ -38,7 +38,7 @@ const Artists = () => {
           </div>
 
           {/* Wrapper for cards */}
-          <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
+          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
             <ArtistCard
               img={tiago}
               alt={"Tiago's photo"}
@@ -46,7 +46,7 @@ const Artists = () => {
               artist={"Tiago"}
               link={"https://www.instagram.com/tiagoborgestattoos/"}
               socialMedia={"@tiagoborgestattoos"}
-              booking={"https://www.instagram.com/direct/t/108115133917761"}
+              booking={"https://www.instagram.com/tiagoborgestattoos/"}
               bookingText={t("dm_appointments")}
               dates=""
             />
@@ -58,7 +58,7 @@ const Artists = () => {
               artist={"Daniela"}
               link={"https://www.instagram.com/danielaspielberger/"}
               socialMedia={"@danielaspielberger"}
-              booking={"https://www.instagram.com/direct/t/113920086666340"}
+              booking={"https://www.instagram.com/danielaspielberger/"}
               bookingText={t("booking_closed")}
               dates=""
             />
@@ -70,7 +70,7 @@ const Artists = () => {
               artist={"Basti"}
               link={"https://www.instagram.com/bastidegroot/"}
               socialMedia={"@bastidegroot"}
-              booking={"https://www.instagram.com/direct/t/108656357198639"}
+              booking={"https://www.instagram.com/bastidegroot/"}
               bookingText={t("dm_appointments")}
               dates=""
             />
@@ -94,7 +94,7 @@ const Artists = () => {
               artist={"Gabriela Gaedke"}
               link={"https://www.instagram.com/thunderthestorm/"}
               socialMedia={"@thunderthestorm"}
-              booking={"https://www.instagram.com/direct/t/104702077804895"}
+              booking={"https://www.instagram.com/thunderthestorm/"}
               bookingText={t("dm_appointments")}
               dates=""
             />

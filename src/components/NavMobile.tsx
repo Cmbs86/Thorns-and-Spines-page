@@ -66,7 +66,7 @@ const NavMobile = () => {
                       href={route.href}
                     >
                       {/* fix media queries of the link/routes */}
-                      <span className="flex text-2xl md:text-3xl mb-10 font-bold text-tns-ebony">
+                      <span className="flex text-xl md:text-2xl mb-10 font-bold text-tns-ebony">
                         {route.title}
                       </span>
                       {/* <Icon className="text-xl" /> */}

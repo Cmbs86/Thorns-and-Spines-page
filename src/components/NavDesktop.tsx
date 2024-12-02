@@ -11,7 +11,7 @@ const NavDesktop = () => {
             <a
               
               href={href}
-              className="items-center gap-1 text-tns-ebony hover:text-tns-ash-gray/90  transition-all text-2xl font-bold"
+              className="items-center gap-1 text-tns-ebony hover:text-tns-ash-gray/90  transition-all text-xl font-bold"
             >
               {/* <Icon /> */}
               {title}

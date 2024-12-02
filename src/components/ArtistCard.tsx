@@ -28,31 +28,31 @@ const ArtistCard: React.FC<ArtistProps> = ({
           src={img}
           alt={alt}
           title={title}
-          className="rounded-full w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[450px] lg:h-[450px] xl:w-[475px] xl:h-[475px] object-cover mx-auto"
+          className="rounded-full w-[280px] h-[280px] sm:w-[320px] sm:h-[320px] lg:w-[380px] lg:h-[380px] xl:w-[440px] xl:h-[440px] object-cover mx-auto"
         />
         <div className="mt-8">
           <div className="text-center ">
-            <h3 className="mb-8 text-3xl sm:text-4xl lg:text-5xl font-bold font-sans text-tns-ebony">
+            <h3 className="mb-8 text-2xl sm:text-3xl lg:text-4xl font-bold font-sans text-tns-ebony">
               {artist}
             </h3>
           </div>
           <a
             href={link}
-            className="block text-lg sm:text-xl lg:text-2xl text-tns-ebony"
+            className="block text-base sm:text-lg lg:text-xl text-tns-ebony"
             target="_blank"
           >
             <span className="underline-animation">{socialMedia}</span>
           </a>
           <a
             href={booking}
-            className="mt-2 text-lg sm:text-xl  lg:text-2xl text-tns-ebony "
+            className="mt-2 text-base sm:text-lg  lg:text-xl text-tns-ebony "
             rel="noopener noreferrer"
             target="_blank"
           >
             <span className="underline-animation-right">{bookingText}</span>
           </a>
         </div>
-        <p className="mt-1 text-lg sm:text-xl font-semibold lg:text-2xl text-tns-ebony">{dates}</p>
+        <p className="mt-1 text-base sm:text-lg font-semibold lg:text-xl text-tns-ebony">{dates}</p>
       </div>
     </>
   );

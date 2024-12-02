@@ -33,7 +33,7 @@ const UpcomingGuests = () => {
           </div>
 
           {/* Wrapper for cards */}
-          <div className="max-w-[1600px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
+          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10  ">
             <ArtistCard
               img={NIsaac}
               alt={"n.isaac's photo"}
@@ -41,7 +41,7 @@ const UpcomingGuests = () => {
               artist={"Isaac"}
               link={"https://www.instagram.com/n.isaac.ttt/"}
               socialMedia={"@n.isaac.ttt"}
-              booking={"https://www.instagram.com/direct/t/100551108013622"}
+              booking={"https://www.instagram.com/n.isaac.ttt/"}
               bookingText={t("dm_appointments")}
               dates="02.12.2024 - 07.12.2024"
             />
@@ -53,7 +53,7 @@ const UpcomingGuests = () => {
               artist={"The Aphotic"}
               link={"https://www.instagram.com/the_aphotic/"}
               socialMedia={"@the_aphotic"}
-              booking={"https://www.instagram.com/direct/t/108136683920422"}
+              booking={"https://www.instagram.com/the_aphotic/"}
               bookingText={t("dm_appointments")}
               dates="05.12.2024 - 7.12.2024"
             />
