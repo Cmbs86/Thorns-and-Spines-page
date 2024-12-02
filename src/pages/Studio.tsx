@@ -165,7 +165,7 @@ const Studio = () => {
       </div>
       {/* Lightbox Modal */}
       {isOpen && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-70 z-50 ">
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-90 z-50 ">
           <div className="relative w-[95%] xl:w-[75%]  ">
             <button
               onClick={closeLightbox}
