@@ -12,6 +12,7 @@
   "contact": "Contact",
   "guest_artists": "Guest Artists",
   "store": "Store",
+  "not_found_header": "Not Found",
   "location": "Location",
   "welcome": "WELCOME TO THORNS & SPINES",
   "our_address": "Our Address:",
@@ -24,5 +25,7 @@
   "sent": "Sent!",
   "contact_us_message": "For tattoo appointments and specific inquiries, please reach out to our artists directly via the links on our Artists or Guest pages of this website. Use this contact form for general questions or inquiries, and we’ll get back to you as soon as possible",
   "store_text": "Explore our exclusive collection of merchandise and artwork. Click the button below to visit our Big Cartel store and shop your favorites today!",
-  "store_button": "Visit our Store"
+  "store_button": "Visit our Store",
+  "not_found": "OOOPS! PAGE NOT FOUND!",
+  "back_to_home": "Back to Home"
 }
