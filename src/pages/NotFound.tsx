@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import AnimatedSeparator from "../components/AnimatedSeparator";
 import thorns_round from "../assets/images/thorns_round.webp";
-type TranslationKeys = "store" | "store_text"| "store_button";
+type TranslationKeys = "not_found_header" | "not_found" | "back_to_home";
 
 
 const NotFound = () => {
