@@ -31,7 +31,7 @@ const UpcomingGuests = () => {
           </div>
 
           {/* Wrapper for cards */}
-          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 md:gap-x-10   xl:gap-x-52 2xl:gap-x-96  ">
+          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10">
             <ArtistCard
               img={luhtsuki}
               alt={"luhtsuki's photo"}
@@ -54,7 +54,31 @@ const UpcomingGuests = () => {
               bookingText={t("dm_appointments")}
               dates="Stay tuned!"
             />
+            <ArtistCard
+              img={thorns_round}
+              alt={"thorns_round's photo"}
+              title={"thorns_round's photo"}
+              artist={t("more_guests")}
+              link={"https://www.instagram.com/thorns.and.spines/"}
+              socialMedia={"@thorns.and.spines"}
+              booking={"https://www.instagram.com/thorns.and.spines/"}
+              bookingText={t("dm_appointments")}
+              dates="Stay tuned!"
+            />
+            <ArtistCard
+              img={thorns_round}
+              alt={"thorns_round's photo"}
+              title={"thorns_round's photo"}
+              artist={t("more_guests")}
+              link={"https://www.instagram.com/thorns.and.spines/"}
+              socialMedia={"@thorns.and.spines"}
+              booking={"https://www.instagram.com/thorns.and.spines/"}
+              bookingText={t("dm_appointments")}
+              dates="Stay tuned!"
+            />
           </div>
+          
+          
           <AnimatedSeparator />
         </main>
       </ContentLayout>
@@ -63,3 +87,5 @@ const UpcomingGuests = () => {
 };
 
 export default UpcomingGuests;
+
+
