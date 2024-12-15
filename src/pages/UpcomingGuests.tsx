@@ -22,7 +22,7 @@ const UpcomingGuests = () => {
   return (
     <>
       <ContentLayout>
-        <main className="min-h-screen w-full  flex flex-col items-center justify-center">
+        <main className="w-full flex flex-col items-center justify-center">
           {/* Text section */}
           <div className="text-center my-10">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-tns-ebony font-sans ">
@@ -31,7 +31,7 @@ const UpcomingGuests = () => {
           </div>
 
           {/* Wrapper for cards */}
-          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10">
+          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
             <ArtistCard
               img={luhtsuki}
               alt={"luhtsuki's photo"}
@@ -54,7 +54,7 @@ const UpcomingGuests = () => {
               bookingText={t("dm_appointments")}
               dates="Stay tuned!"
             />
-            <ArtistCard
+            {/* <ArtistCard
               img={thorns_round}
               alt={"thorns_round's photo"}
               title={"thorns_round's photo"}
@@ -64,8 +64,8 @@ const UpcomingGuests = () => {
               booking={"https://www.instagram.com/thorns.and.spines/"}
               bookingText={t("dm_appointments")}
               dates="Stay tuned!"
-            />
-            <ArtistCard
+            /> */}
+            {/* <ArtistCard
               img={thorns_round}
               alt={"thorns_round's photo"}
               title={"thorns_round's photo"}
@@ -75,12 +75,12 @@ const UpcomingGuests = () => {
               booking={"https://www.instagram.com/thorns.and.spines/"}
               bookingText={t("dm_appointments")}
               dates="Stay tuned!"
-            />
+            /> */}
           </div>
           
           
-          <AnimatedSeparator />
         </main>
+          <AnimatedSeparator />
       </ContentLayout>
     </>
   );
