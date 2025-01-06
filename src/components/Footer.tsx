@@ -25,7 +25,7 @@ const Footer = () => {
             </h3>
           </div>
           <div className="flex text-center text-xs md:text-sm break-all ">
-            <p>contact@thornsandspines.de</p>
+            <p>thornsandspinestattoo@gmail.com</p>
           </div>
         </div>
       </div>

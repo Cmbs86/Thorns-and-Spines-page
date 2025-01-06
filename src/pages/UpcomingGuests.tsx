@@ -8,6 +8,8 @@ import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
 import luhtsuki from "../assets/images/luhtsuki.webp";
 import thorns_round from "../assets/images/thorns_round.webp";
+import lucasferreira from "../assets/images/lucas_ferreira.webp";
+import milena from "../assets/images/milena_lauers.webp";
 
 type TranslationKeys =
   | "guest_artists"
@@ -44,27 +46,27 @@ const UpcomingGuests = () => {
               dates="07.01.2025 - 10.01.2025"
             />
             <ArtistCard
-              img={thorns_round}
-              alt={"thorns_round's photo"}
-              title={"thorns_round's photo"}
-              artist={t("more_guests")}
-              link={"https://www.instagram.com/thorns.and.spines/"}
-              socialMedia={"@thorns.and.spines"}
-              booking={"https://www.instagram.com/thorns.and.spines/"}
-              bookingText={t("dm_appointments")}
-              dates="Stay tuned!"
+              img={lucasferreira}
+              alt={"lucasferreira's photo"}
+              title={"lucasferreira's photo"}
+              artist={"Lucas Ferreira"}
+              link={"https://www.instagram.com/lucasferreiratattoo/"}
+              socialMedia={"@lucasferreiratattoo"}
+              booking={"mailto:lucasferreiratattoo@gmail.com"}
+              bookingText={t("email_appointments")}
+              dates="16.04.2025 - 21.04.2025"
             />
-            {/* <ArtistCard
-              img={thorns_round}
-              alt={"thorns_round's photo"}
-              title={"thorns_round's photo"}
-              artist={t("more_guests")}
-              link={"https://www.instagram.com/thorns.and.spines/"}
-              socialMedia={"@thorns.and.spines"}
-              booking={"https://www.instagram.com/thorns.and.spines/"}
-              bookingText={t("dm_appointments")}
-              dates="Stay tuned!"
-            /> */}
+            <ArtistCard
+              img={milena}
+              alt={"milena's photo"}
+              title={"milena's photo"}
+              artist={"Milena Lauers"}
+              link={"https://www.instagram.com/milenalauers/"}
+              socialMedia={"@milenalauers"}
+              booking={"mailto:m.lauers@gmail.com"}
+              bookingText={t("email_appointments")}
+              dates="16.04.2025 - 21.04.2025"
+            />
             {/* <ArtistCard
               img={thorns_round}
               alt={"thorns_round's photo"}
