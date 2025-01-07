@@ -34,17 +34,7 @@ const UpcomingGuests = () => {
 
           {/* Wrapper for cards */}
           <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
-            <ArtistCard
-              img={luhtsuki}
-              alt={"luhtsuki's photo"}
-              title={"luhtsuki's photo"}
-              artist={"Luh Tsuki"}
-              link={"https://www.instagram.com/luh.tsuki/"}
-              socialMedia={"@luh.tsuki"}
-              booking={"mailto:luh.tsuki@gmail.com"}
-              bookingText={t("email_appointments")}
-              dates="07.01.2025 - 10.01.2025"
-            />
+      
             <ArtistCard
               img={lucasferreira}
               alt={"lucasferreira's photo"}
@@ -67,7 +57,7 @@ const UpcomingGuests = () => {
               bookingText={t("email_appointments")}
               dates="16.04.2025 - 21.04.2025"
             />
-            {/* <ArtistCard
+            <ArtistCard
               img={thorns_round}
               alt={"thorns_round's photo"}
               title={"thorns_round's photo"}
@@ -77,7 +67,7 @@ const UpcomingGuests = () => {
               booking={"https://www.instagram.com/thorns.and.spines/"}
               bookingText={t("dm_appointments")}
               dates="Stay tuned!"
-            /> */}
+            />
           </div>
           
           
