@@ -33,7 +33,7 @@ const UpcomingGuests = () => {
           </div>
 
           {/* Wrapper for cards */}
-          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
+          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
       
             <ArtistCard
               img={lucasferreira}
