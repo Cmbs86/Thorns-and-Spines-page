@@ -7,10 +7,10 @@ import ArtistCard from "../components/ArtistCard.tsx";
 import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
 
-import lucasferreira from "../assets/images/lucas_ferreira.webp";
-import milena from "../assets/images/milena_lauers.webp";
-import velvet from "../assets/images/velvetviolence.webp";
-import phil from "../assets/images/phil.webp";
+// import lucasferreira from "../assets/images/lucas_ferreira.webp";
+// import milena from "../assets/images/milena_lauers.webp";
+// import velvet from "../assets/images/velvetviolence.webp";
+// import phil from "../assets/images/phil.webp";
 import Aline from "../assets/images/aline.webp";
 import aphotic from "../assets/images/the_aphotic.webp";
 import aminakat from "../assets/images/aminakat.webp";
@@ -38,7 +38,7 @@ const UpcomingGuests = () => {
 
           {/* Wrapper for cards */}
           <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 ">
-            <ArtistCard
+            {/* <ArtistCard
               img={velvet}
               alt={"levithetattooer's photo"}
               title={"levithetattooer's photo"}
@@ -48,8 +48,8 @@ const UpcomingGuests = () => {
               booking={t("https://www.velvetviolencetattoo.co.uk/contact")}
               bookingText={t("booking_dm_or_website_contact_form")}
               dates="18.03.2025 - 19.03.2025"
-            />
-            <ArtistCard
+            /> */}
+            {/* <ArtistCard
               img={phil}
               alt={"phil_pig_grinder's photo"}
               title={"philpiggrinder_tattoo photo"}
@@ -59,7 +59,7 @@ const UpcomingGuests = () => {
               booking={t("https://www.instagram.com/philpiggrinder_tattoo/")}
               bookingText={t("dm_appointments")}
               dates="2.04.2025 - 3.04.2025"
-            />
+            /> */}
 
             <ArtistCard
               img={Aline}
@@ -72,7 +72,7 @@ const UpcomingGuests = () => {
               bookingText={t("dm_appointments")}
               dates="11.04.2025 - 12.04.2025"
             />
-            <ArtistCard
+            {/* <ArtistCard
               img={lucasferreira}
               alt={"lucasferreira's photo"}
               title={"lucasferreira's photo"}
@@ -82,8 +82,8 @@ const UpcomingGuests = () => {
               booking={"mailto:lucasferreiratattoo@gmail.com"}
               bookingText={t("email_appointments")}
               dates="16.04.2025 - 21.04.2025"
-            />
-            <ArtistCard
+            /> */}
+            {/* <ArtistCard
               img={milena}
               alt={"milena's photo"}
               title={"milena's photo"}
@@ -93,7 +93,7 @@ const UpcomingGuests = () => {
               booking={"mailto:m.lauers@gmail.com"}
               bookingText={t("email_appointments")}
               dates="16.04.2025 - 21.04.2025"
-            />
+            /> */}
 
             <ArtistCard
               img={aphotic}
