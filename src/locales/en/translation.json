@@ -2,6 +2,7 @@
   "resident_artists": "Resident Artists",
   "email_appointments": "Email for appointments",
   "dm_appointments": "DM for appointments",
+  "booking_fully" : "Fully booked",
   "booking_closed": "Bookings currently closed",
   "booking_whatsapp": "Bookings via WhatsApp",
   "booking_dm_or_email": "Bookings via DM or Email",

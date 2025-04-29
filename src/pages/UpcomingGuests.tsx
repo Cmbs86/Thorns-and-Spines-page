@@ -7,8 +7,9 @@ import ArtistCard from "../components/ArtistCard.tsx";
 import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
 
-import Aline from "../assets/images/aline.webp";
-import aphotic from "../assets/images/the_aphotic.webp";
+import Lorena from "../assets/images/lorena_morato.webp";
+import Rafaella from "../assets/images/raffaela_fabbri.webp";
+import Cat from "../assets/images/cat_tattoing.webp";
 import isaac from "../assets/images/isaac.webp";
 import aminakat from "../assets/images/aminakat.webp";
 
@@ -36,28 +37,6 @@ const UpcomingGuests = () => {
           {/* Wrapper for cards */}
           <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 ">
             <ArtistCard
-              img={Aline}
-              alt={"inkmatos's photo"}
-              title={"inkmatos's photo"}
-              artist={"Aline Matos"}
-              link={"https://www.instagram.com/inkmatos/"}
-              socialMedia={"@inkmatos"}
-              booking={t("https://www.instagram.com/inkmatos/")}
-              bookingText={t("dm_appointments")}
-              dates="11.04.2025 - 12.04.2025"
-            />
-            <ArtistCard
-              img={aphotic}
-              alt={"The Aphotic's photo"}
-              title={"The Aphotic's photo"}
-              artist={"The Aphotic"}
-              link={"https://www.instagram.com/the_aphotic/"}
-              socialMedia={"@the_aphotic"}
-              booking={"mailto:aphotictattoo@gmail.com"}
-              bookingText={t("email_appointments")}
-              dates="21.04.2025 - 23.04.2025"
-            />
-            <ArtistCard
               img={isaac}
               alt={"n.isaac.ttt's photo"}
               title={"n.isaac.ttt's photo"}
@@ -81,28 +60,41 @@ const UpcomingGuests = () => {
               dates="1.06.2025 - 22.06.2025"
             />
 
-            {/* <ArtistCard
-              img={lucasferreira}
-              alt={"lucasferreira's photo"}
-              title={"lucasferreira's photo"}
-              artist={"Lucas Ferreira"}
-              link={"https://www.instagram.com/lucasferreiratattoo/"}
-              socialMedia={"@lucasferreiratattoo"}
-              booking={"mailto:lucasferreiratattoo@gmail.com"}
+            <ArtistCard
+              img={Lorena}
+              alt={"Lorena Morato's photo"}
+              title={"Lorena Morato's photo"}
+              artist={"Lorena Morato"}
+              link={"https://www.instagram.com/lore.morato/"}
+              socialMedia={"@lore.morato"}
+              booking={t("https://www.instagram.com/lore.morato/")}
+              bookingText={t("booking_fully")}
+              dates="16.07.2025 - 18.07.2025"
+            />
+              <ArtistCard
+                img={Cat}
+                alt={"Cat Tattoing's photo"}
+                title={"Cat Tattoing's photo"}
+                artist={"Cat Tattoing"}
+                link={"https://www.instagram.com/cattattooing/"}
+                socialMedia={"@cat_tattoing"}
+                booking={"https://www.instagram.com/cattattooing/"}
+                bookingText={t("booking_fully")}
+                dates="24.07.2025 - 26.07.2025"
+              />
+            <ArtistCard
+              img={Rafaella}
+              alt={"Raffaella Fabbri's photo"}
+              title={"Raffaella Fabbri's photo"}
+              artist={"Raffaella Fabbri"}
+              link={"https://www.instagram.com/raffaellafabbri.ttt/"}
+              socialMedia={"@raffaellafabbri.ttt"}
+              booking={"mailto:raffaellafabbri.ttt@gmail.com"}
               bookingText={t("email_appointments")}
-              dates="16.04.2025 - 21.04.2025"
-            /> */}
-            {/* <ArtistCard
-              img={milena}
-              alt={"milena's photo"}
-              title={"milena's photo"}
-              artist={"Milena Lauers"}
-              link={"https://www.instagram.com/milenalauers/"}
-              socialMedia={"@milenalauers"}
-              booking={"mailto:m.lauers@gmail.com"}
-              bookingText={t("email_appointments")}
-              dates="16.04.2025 - 21.04.2025"
-            /> */}
+              dates="24.07.2025 - 26.07.2025"
+            />
+
+        
           </div>
         </main>
         <AnimatedSeparator />
