@@ -106,3 +106,5 @@ const UpcomingGuests = () => {
 export default UpcomingGuests;
 
 // for empty guests page:  <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
+
+
