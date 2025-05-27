@@ -41,18 +41,6 @@ const UpcomingGuests = () => {
           {/* Wrapper for cards */}
           <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 ">
             <ArtistCard
-              img={isaac}
-              alt={"n.isaac.ttt's photo"}
-              title={"n.isaac.ttt's photo"}
-              artist={"Isaac"}
-              link={"https://www.instagram.com/n.isaac.ttt/"}
-              socialMedia={"@n.isaac.ttt"}
-              booking={t("https://www.instagram.com/n.isaac.ttt/")}
-              bookingText={t("dm_appointments")}
-              dates="19.05.2025 - 24.05.2025"
-            />
-
-            <ArtistCard
               img={aminakat}
               alt={"Amina Kat's photo"}
               title={"Amina Kat's photo"}
