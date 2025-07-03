@@ -10,8 +10,6 @@ import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 import Lorena from "../assets/images/lorena_morato.webp";
 import Rafaella from "../assets/images/raffaela_fabbri.webp";
 import Cat from "../assets/images/cat_tattoing.webp";
-import aminakat from "../assets/images/aminakat.webp";
-import wagner_basei from "../assets/images/wagner_basei.webp";
 import bruno_santos from "../assets/images/bruno_santos.webp";
 import pedro_inou from "../assets/images/pedro_inou.webp";
 
@@ -38,30 +36,6 @@ const UpcomingGuests = () => {
 
           {/* Wrapper for cards */}
           <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 ">
-            <ArtistCard
-              img={aminakat}
-              alt={"Amina Kat's photo"}
-              title={"Amina Kat's photo"}
-              artist={"Amina Kat"}
-              link={"https://www.instagram.com/aminakat/"}
-              socialMedia={"@aminakat"}
-              booking={"https://wa.me/34652697879"}
-              bookingText={t("booking_whatsapp")}
-              dates="1.06.2025 - 22.06.2025"
-            />
-
-            <ArtistCard
-              img={wagner_basei}
-              alt={"Wagner Basei's photo"}
-              title={"Wagner Basei's photo"}
-              artist={"Wagner Basei"}
-              link={"https://www.instagram.com/wagnerbasei/"}
-              socialMedia={"@wagnerbasei"}
-              booking={"mailto:wagnerbasei@gmail.com"}
-              bookingText={t("email_appointments")}
-              dates="23.06.2025 - 24.06.2025"
-            />
-
             <ArtistCard
               img={Lorena}
               alt={"Lorena Morato's photo"}
@@ -131,19 +105,3 @@ const UpcomingGuests = () => {
 export default UpcomingGuests;
 
 // for empty guests page:  <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
-
-
-
-            {/* <ArtistCard
-              img={alex_berg}
-              alt={"Alex Berg's photo"}
-              title={"Alex Berg's photo"}
-              artist={"Alex Berg"}
-              link={"https://www.instagram.com/alexbergtattoo/"}
-              socialMedia={"@alexbergtattoo"}
-              booking={
-                "https://taplink.cc/alexbergtattoo?fbclid=PAZXh0bgNhZW0CMTEAAadrz7Q4OKO5Vy23m270S0vAHfLJh5hAUgjjCkYbySf28i6ol_t1RvNy54xfcw_aem_K1lE-PPKSzZAWyYQhSQzKA"
-              }
-              bookingText={t("booking_form")}
-              dates="10.06.2025 - 11.06.2025"
-            /> */}
