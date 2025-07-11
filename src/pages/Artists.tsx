@@ -10,10 +10,10 @@ import tiago from "../assets/images/tiago.webp";
 import daniela from "../assets/images/daniela.webp";
 import basti from "../assets/images/basti.webp";
 import SeppTattoo from "../assets/images/sepp.webp";
-import gabitattoo from "../assets/images/gabi.webp";
 import maikontattoo from "../assets/images/maikon.webp";
 import mariatattoo from "../assets/images/maria.webp";
 import marczwg from "../assets/images/marc.webp";
+import aminakat from "../assets/images/aminakat.webp";
 
 type TranslationKeys =
   | "resident_artists"
@@ -88,14 +88,14 @@ const Artists = () => {
             />
 
             <ArtistCard
-              img={gabitattoo}
-              alt={"Gabi's photo"}
-              title={"Gabi's photo"}
-              artist={"Gabriela Gaedke"}
-              link={"https://www.instagram.com/thunderthestorm/"}
-              socialMedia={"@thunderthestorm"}
-              booking={"https://www.instagram.com/thunderthestorm/"}
-              bookingText={t("dm_appointments")}
+              img={aminakat}
+              alt={"Amina's photo"}
+              title={"Amina's photo"}
+              artist={"Amina Kat"}
+              link={"https://www.instagram.com/aminakat/"}
+              socialMedia={"@aminakat"}
+              booking={"https://wa.me/34652697879"}
+              bookingText={t("booking_whatsapp")}
               dates=""
             />
             <ArtistCard
