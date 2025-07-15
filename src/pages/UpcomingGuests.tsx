@@ -11,7 +11,9 @@ import Lorena from "../assets/images/lorena_morato.webp";
 import Rafaella from "../assets/images/raffaela_fabbri.webp";
 import Cat from "../assets/images/cat_tattoing.webp";
 import bruno_santos from "../assets/images/bruno_santos.webp";
+import the_aphotic from "../assets/images/the_aphotic.webp";
 import pedro_inou from "../assets/images/pedro_inou.webp";
+import paulo_bocchi from "../assets/images/paulo_bocchi.webp";
 
 type TranslationKeys =
   | "guest_artists"
@@ -47,7 +49,6 @@ const UpcomingGuests = () => {
               bookingText={t("booking_fully")}
               dates="16.07.2025 - 18.07.2025"
             />
-
             <ArtistCard
               img={bruno_santos}
               alt={"Bruno Santos's photo"}
@@ -61,6 +62,8 @@ const UpcomingGuests = () => {
               bookingText={t("booking_form")}
               dates="21.07.2025 - 23.07.2025"
             />
+         
+
             <ArtistCard
               img={Cat}
               alt={"Cat Tattoing's photo"}
@@ -84,6 +87,18 @@ const UpcomingGuests = () => {
               dates="24.07.2025 - 26.07.2025"
             />
             <ArtistCard
+              img={the_aphotic}
+              alt={"The Aphotic's photo"}
+              title={"The Aphotic's photo"}
+              artist={"The Aphotic"}
+              link={"https://www.instagram.com/the_aphotic/"}
+              socialMedia={"@the_aphotic"}
+              booking={"mailto:aphotictattoo@gmail.com"}
+              bookingText={t("email_appointments")}
+              dates="27.08.2025 - 29.08.2025"
+            />
+
+            <ArtistCard
               img={pedro_inou}
               alt={"Pedro Inou's photo"}
               title={"Pedro Inou's photo"}
@@ -93,6 +108,19 @@ const UpcomingGuests = () => {
               booking={"mailto:inoutattoo.europe@gmail.com"}
               bookingText={t("email_appointments")}
               dates="22.09.2025 - 12.10.2025"
+            />
+            <ArtistCard
+              img={paulo_bocchi}
+              alt={"Paulo Bocchi's photo"}
+              title={"Paulo Bocchi's photo"}
+              artist={"Paulo Bocchi"}
+              link={"https://www.instagram.com/bocchink/"}
+              socialMedia={"@bocchink"}
+              booking={t(
+               "https://docs.google.com/forms/d/e/1FAIpQLSfwdB_TRMr2Jv68ColfEsLDToIUUPYCjxLKx-e-8HluhTXYWQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacOPNHsYv1D_V3xALGvNxKYpGI3Axzear-QAHwEyLqc3uucvOa03tsA8PcKSQ_aem_gtmZcpzEiVTh0QNGTld-uA&pli=1"
+              )}
+              bookingText={t("booking_form")}
+              dates="29.09.2025 - 04-10-2025"
             />
           </div>
         </main>
