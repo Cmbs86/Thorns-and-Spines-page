@@ -7,7 +7,6 @@ import ArtistCard from "../components/ArtistCard.tsx";
 import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
 
-import Lorena from "../assets/images/lorena_morato.webp";
 import Rafaella from "../assets/images/raffaela_fabbri.webp";
 import Cat from "../assets/images/cat_tattoing.webp";
 import bruno_santos from "../assets/images/bruno_santos.webp";
@@ -38,17 +37,7 @@ const UpcomingGuests = () => {
 
           {/* Wrapper for cards */}
           <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 ">
-            <ArtistCard
-              img={Lorena}
-              alt={"Lorena Morato's photo"}
-              title={"Lorena Morato's photo"}
-              artist={"Lorena Morato"}
-              link={"https://www.instagram.com/lore.morato/"}
-              socialMedia={"@lore.morato"}
-              booking={t("https://www.instagram.com/lore.morato/")}
-              bookingText={t("booking_fully")}
-              dates="16.07.2025 - 18.07.2025"
-            />
+        
             <ArtistCard
               img={bruno_santos}
               alt={"Bruno Santos's photo"}
@@ -56,7 +45,7 @@ const UpcomingGuests = () => {
               artist={"Bruno Santos"}
               link={"https://www.instagram.com/brunosantostattoo/"}
               socialMedia={"@brunosantostattoo"}
-              booking={t(
+              booking={(
                 "https://sanctorumtattoo.com/get-booked-in?fbclid=PAZXh0bgNhZW0CMTEAAafTsAoUD4P2KnRFVgEj_rDwfTMG1yI2YBQqdxYBfjTa6MDKctysS375ZmLsPw_aem_pWjR9TC2s5LcrpWkvr4lig"
               )}
               bookingText={t("booking_form")}
@@ -116,7 +105,7 @@ const UpcomingGuests = () => {
               artist={"Paulo Bocchi"}
               link={"https://www.instagram.com/bocchink/"}
               socialMedia={"@bocchink"}
-              booking={t(
+              booking={(
                "https://docs.google.com/forms/d/e/1FAIpQLSfwdB_TRMr2Jv68ColfEsLDToIUUPYCjxLKx-e-8HluhTXYWQ/viewform?fbclid=PAZXh0bgNhZW0CMTEAAacOPNHsYv1D_V3xALGvNxKYpGI3Axzear-QAHwEyLqc3uucvOa03tsA8PcKSQ_aem_gtmZcpzEiVTh0QNGTld-uA&pli=1"
               )}
               bookingText={t("booking_form")}
