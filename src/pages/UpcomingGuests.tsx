@@ -6,7 +6,6 @@ import { useTranslation } from "react-i18next";
 import ArtistCard from "../components/ArtistCard.tsx";
 import AnimatedSeparator from "../components/AnimatedSeparator.tsx";
 // Images imports
-import pedro_inou from "../assets/images/pedro_inou.webp";
 import paulo_bocchi from "../assets/images/paulo_bocchi.webp";
 import lou_akima from "../assets/images/lou-akima.webp";
 
@@ -32,18 +31,7 @@ const UpcomingGuests = () => {
           </div>
 
           {/* Wrapper for cards */}
-          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 ">
-            <ArtistCard
-              img={pedro_inou}
-              alt={"Pedro Inou's photo"}
-              title={"Pedro Inou's photo"}
-              artist={"Pedro Inou"}
-              link={"https://www.instagram.com/inoutattoo/"}
-              socialMedia={"@inoutattoo"}
-              booking={"mailto:inoutattoo.europe@gmail.com"}
-              bookingText={t("email_appointments")}
-              dates="22.09.2025 - 12.10.2025"
-            />
+          <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
             <ArtistCard
               img={paulo_bocchi}
               alt={"Paulo Bocchi's photo"}
@@ -79,3 +67,5 @@ const UpcomingGuests = () => {
 export default UpcomingGuests;
 
 // for empty guests page:  <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around gap-y-10 lg:gap-x-10 xl:gap-x-32 2xl:gap-x-56 py-16 ">
+
+// for regular/full guest page:   <div className="max-w-[1500px] mx-auto flex flex-col md:flex-row flex-wrap justify-around 2xl:justify-between gap-y-10 ">
