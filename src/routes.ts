@@ -29,11 +29,11 @@ export const useRoutes = ():Route[] => {
       href: "/studio",
       // Icon: IoPricetagsOutline,
     },
-    {
-      title: t('guest_artists'),
-      href: "/upcoming-guests",
-      // Icon: PiChatCircleBold,
-    },
+    // {
+    //   title: t('guest_artists'),
+    //   href: "/upcoming-guests",
+    //   // Icon: PiChatCircleBold,
+    // }, // Route for upcoming guests closed until further notice
     {
       title: t('store'),
       href: "/store",
